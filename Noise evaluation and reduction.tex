@@ -1,0 +1,286 @@
+\documentclass[10pt]{article}
+\usepackage {fullpage}
+\usepackage{graphicx}
+\setlength{\parskip}{1em}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{listings}
+\lstset{language=Matlab}
+\lstset{tabsize=2}
+
+\begin{document}
+		\title{Report}
+		\author{Hoang Duc Viet}
+		\date{\today}
+		\maketitle
+
+\newpage
+%\tableofcontents
+\newpage
+\section{Noise}
+Although camera technology is very improve over the past decade, it still has not totally remove noise for images. This usually appear as little dots or speckles over an image area that should be clear and smooth. For example, graininess might be evident in dark areas or tiny dots of pink and purple might show up across a clear sky.
+
+Noise can appear in our photo for different reasons. One would be when we use high ISO settings on our camera. Noise signal increases with the light signal when high ISO is used, therefore our camera will capture more light to illuminate the scene, but graininess will also be more apparent. Another cause of image noise is heat. When an image sensor heats up, photons separate from the photosites and taint other photosites. Long exposures also give our image greater risk of showing image noise, since the sensor is left open to gather more image data and this includes electrical noise.
+
+Noise is the result of errors from image when in pixel values that do not reflect the true intensities of the real scene. There are 3 types of image noise.
+
+\subsection{Fixed Pattern}
+Fixed pattern noise appear during extremely long exposures. So when the camera is working for long periods of time and it heats up, the sensor starts to produce these strange dots of color in our image. And our camera is hotter, more fixed pattern noise will appear.
+\begin{center}
+	\includegraphics{fix.png}
+\end{center}
+
+
+\subsection{Random Noise}
+Random noise maybe the most common image noise. Random noise appear whenever we’re using high ISO values.
+
+Cameras has good at reducing the amount of random noise that is seen in photographs through technology. The noise reduction feature on some cameras which remove random noise. So when technology continues to improve, we can shoot in low light situation. 
+
+\begin{center}
+	\includegraphics{random.png}
+\end{center}
+
+\subsection{Banding Noise}
+Banding noise is very dependent on what type of camera we are using. With high end camera, we have probably never seen banding noise. Lower quality cameras will show some banding noise when photos are shot with higher ISO values.
+
+Banding noise appear in the shadows of photos. It will also occur in post processing if we enhance the exposure too much and digitally make a photograph too bright. We may also see more banding noise in certain white balances.
+
+\begin{center}
+	\includegraphics{banding.png}
+\end{center}
+
+
+\section{Noise Removal}
+
+Noise removal is very important task in image processing. This task is image restoration is to remove the noise from the image in such a way that the original image is well quality. In modern digital image processing, data de-noising is a hard problem and it used to application areas. Image de-noising task is popular problem to  photography or publishing where image was somehow degraded but needs to be improved before it can be printed. 
+
+
+\subsection{Spatial Filtering}
+Filtering is a technique for modifying or enhancing an image. Spatial domain operation or filtering (the processed value for the current pixel processed value for the current pixel depends on both itself and surrounding pixels). Hence Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel. A pixel's neighborhood is some set of pixels, defined by their locations relative to that pixel. 
+
+
+Follow Image Processing,  there are 3 type of filtering :
+\begin{itemize}
+	\item  Median Filter.
+
+The median filter is a nonlinear digital filtering technique.  Remove noise is improve the results of later processing (for example, edge detection on an image). So median filtering is very widely used in image processing and it preserves edges while removing noise under certain conditions.
+
+	\item  Average Filter.
+	
+	The type of mean filtering is simply to replace each pixel value in an image with the mean('average') value of its neighbors, including itself. This has the effect of eliminating pixel values which are
+	unrepresentative of their environment. Mean filtering as a convolution filter.
+	
+	\item  Gaussian Filter.
+	
+	In electronics and signal processing, filter whose impulse response is a Gaussian function (or an approximation to it). Gaussian filters have feature of having no overshoot to a step function input while minimizing the rise and fall time.
+
+	\item Wiener Filter
+	
+	The main aim of this technique is to filter out noise that has corrupted the signal. It is kind of statistical approach. For the designing of this filter one should know the spectral properties of the original signal ,the noise and linear time-variant filter whose output should be as close as to the original as possible. The Wiener filter minimizes the mean square error between the estimated random process and the desired process.
+	
+
+
+
+\end{itemize}
+
+ \subsection{Original Image }
+First, we are going to read and show original image as below :
+\begin{lstlisting}
+I = imread('lena.tif');
+F = imshow(I);
+\end{lstlisting}
+
+\textbf{Result:}
+\begin{center}
+	\includegraphics{lena1.png}
+
+ Original Image
+\end{center}
+
+\subsection{Median Filter}
+Median Filter is family of order filters. It has process : Replace the value of a pixel with the median value of the neighborhood.
+
+$I_{median} = median(I[i,j])$  with $(i,j)\in neighborhood$
+
+From theory above, we are going to build function for median filter :
+
+\begin{lstlisting}
+function F = median(I,w)
+s=size(I);
+for i=floor(w/2)+1:s(1)-floor(w/2)
+	for j=floor(w/2)+1:s(2)-floor(w/2)
+		for k=1:w
+			for l=1:w
+				vect(w*(k-1)+l)=I(i-floor(k/2)+2,j-floor(l/2)+2);
+			end
+		end
+		B=sort(vect);
+		I(i,j)=B(floor(size(B,2)/2)+1);
+	end
+end
+figure;
+
+imshow(I);
+
+\end{lstlisting}
+
+
+\textbf{Result:}
+
+\begin{center}
+	\includegraphics{median1.png}
+	
+	median x 7
+\end{center}
+
+\subsection{Average Filter}
+\textbf{Feature: }
+\begin{itemize}
+	\item A spatial filter that applies to a neighborhood (local method).
+	\item A linear filter, speaking as a convolution.
+	\item A pixel is replaced by the average of itself and its neighbours.
+	\item The neighborhood size determines the amount of smoothing.
+    \item Equivalent to a filtering operation lowpass.
+\end{itemize}
+
+\textbf{Function of Averaging filter:}
+\begin{lstlisting}
+function F=average(I)
+s=size(I);
+F_size=7;
+F=double(zeros(s(1),s(2)));
+	for i=floor(F_size/2)+1:s(1)- floor(F_size/2)
+		for j=floor(F_size/2)+1:s(2)- floor(F_size/2)
+			for k=1:F_size
+				for l=1:F_size
+					F(i,j)=F(i,j)+double(I(i+k-(floor(F_size/2)+1),j+l-(floor(F_size/2)+1)));
+				end;
+			end;
+			F(i,j)=round(F(i,j)/(F_size*F_size));
+			end;
+		end;
+F=uint8(F);
+figure;
+imshow(F);
+\end{lstlisting}
+
+
+
+\textbf{Result:}
+
+\begin{center}
+	\includegraphics{average1.png}
+	
+	7x7
+\end{center}
+
+\subsection{Gaussian Filter}
+
+The Gaussian kernel in dimension 2:
+
+
+$G(x,y) = \dfrac{1}{2\pi\sigma^2}\exp\left[-\dfrac{(x-\mu_x)^2+(y-\mu_y)^2}{2\sigma^2}\right ]$
+
+\
+
+Define the Gaussian mask:
+$$\mu = 0$$
+$$\sigma = 0.8$$
+
+
+$$\dfrac{1}{16}\begin{tabular}{|c|c|c|}
+	\hline 
+	1 & 2 & 1 \\ 
+	\hline 
+	2 & 4 & 2 \\ 
+	\hline 
+	1 & 2 & 1 \\ 
+	\hline 
+\end{tabular} $$
+
+\
+
+From theory above, we are going to build function for gaussian filter :
+\begin{lstlisting}
+function F = gaussian(I) 
+s=size(I);
+F_G=[1,2,1;2,4,2;1,2,1];%sum of coefficient=16
+%F_size=3;
+F=double(zeros(s(1),s(2)));
+	for i=2:s(1)-1
+		for j=2:s(2)-1
+			for k=1:3
+				for l=1:3
+					F(i,j)=F(i,j)+double(I(i+k-2,j+l-2)*F_G(k,l));
+					end;
+				end;
+					F(i,j)=round(F(i,j)/(16));
+				end;
+			end;
+F=uint8(F);
+figure;
+imshow(F)
+\end{lstlisting}
+
+\textbf{Result:}
+\begin{center}
+\includegraphics{gaussian5.png}	
+
+Gaussian
+\end{center}
+
+\subsection{Wiener Filter}
+
+Weiner filter are characterized by following:
+\begin{itemize}
+	\item Assumption: Signal and additive noise are stationary linear with known spectral characteristics or known autocorrelation and cross-correlation.
+	\item Requirement: the filter must be physically realizable.
+	\item Performance criterion: minimum mean –square error. 
+\end{itemize} 
+
+\begin{lstlisting}
+%Add noise
+subplot(2,2,1);
+I = imread('lena.tif');
+J = imnoise(I,'gaussian',0,0);
+imshow(J(100:256,1:256));
+title('Added Gaussian Noise');
+
+%Remove noise
+subplot(2,2,2);
+K = wiener2(J,[5 5]);
+D = imshow(K(100:256,1:256));
+title('Noise Removed by Wiener Filter');
+\end{lstlisting} 
+
+\textbf{Result:}
+
+\includegraphics{Wiener.png}
+
+\newpage
+
+\section{ Comparison Of The Results }
+We use Mean Error Square(MSE) then creat table of Comparison Of The Results as below:
+\begin{center}
+\begin{tabular}{|c|c|}
+	\hline 
+	Filter & MSE \\ 
+	\hline 
+	Median & 0.0372 \\ 
+	\hline 
+	Average & 0.0274 \\ 
+	\hline 
+	Gaussian & 0.0760 \\ 
+	\hline 
+	Weiner & 0.0372 \\ 
+	\hline 
+\end{tabular} 
+\end{center} 
+
+
+With 4 method to remove noise from images by filter. Follow results which we obtain and compare to original images. We can see result of median filter and Weiner filter are the best of results.  
+
+
+
+\end{document}
