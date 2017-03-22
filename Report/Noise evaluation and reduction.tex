@@ -19,7 +19,11 @@
 %\tableofcontents
 \newpage
 \section{Noise}
-Although camera technology is very improve over the past decade, it still has not totally remove noise for images. This usually appear as little dots or speckles over an image area that should be clear and smooth. For example, graininess might be evident in dark areas or tiny dots of pink and purple might show up across a clear sky.
+Noises always appear around our lives everywhere. For example, noise from vehicles, factories or construction sites... Moreover noise also appears in the images. First, we are going to research about images noise.
+
+Image noise is change for brightness or color information in images, and is one of problem electronic noise . It can be appear by the sensor and circuitry of a scanner or digital camera.  Film grain and in the unavoidable shot noise of an ideal photon detector are also cause  . Image noise is an undesirable by product of image capture that adds spurious and extraneous information.
+
+Next, it is quality of camera. Although camera technology is very improve over the past decade, it still has not totally remove noise for images. This usually appear as little dots or speckles over an image area that should be clear and smooth. For example, graininess might be evident in dark areas or tiny dots of pink and purple might show up across a clear sky.
 
 Noise can appear in our photo for different reasons. One would be when we use high ISO settings on our camera. Noise signal increases with the light signal when high ISO is used, therefore our camera will capture more light to illuminate the scene, but graininess will also be more apparent. Another cause of image noise is heat. When an image sensor heats up, photons separate from the photosites and taint other photosites. Long exposures also give our image greater risk of showing image noise, since the sensor is left open to gather more image data and this includes electrical noise.
 
@@ -53,14 +57,18 @@ Banding noise appear in the shadows of photos. It will also occur in post proces
 
 \section{Noise Removal}
 
-Noise removal is very important task in image processing. This task is image restoration is to remove the noise from the image in such a way that the original image is well quality. In modern digital image processing, data de-noising is a hard problem and it used to application areas. Image de-noising task is popular problem to  photography or publishing where image was somehow degraded but needs to be improved before it can be printed. 
+Noise removal is very important task in image processing. This task help image restoration is to remove the noise from the image in such a way that the original image is the best quality. In modern digital image processing, data denoising is a hard problem and it used to application areas. This task is popular problem to  photography or publishing where image was degraded but needs to be improved before it can be printed.
 
 
 \subsection{Spatial Filtering}
-Filtering is a technique for modifying or enhancing an image. Spatial domain operation or filtering (the processed value for the current pixel processed value for the current pixel depends on both itself and surrounding pixels). Hence Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel. A pixel's neighborhood is some set of pixels, defined by their locations relative to that pixel. 
+Spatial filtering is a form of finite impulse response (FIR) filtering. The filter is actually a mask of weights arranged in a rectangular pattern. The process is one of sliding the mask along the image and performing a multiply and accumulate operation on the pixels covered by the mask.
 
 
-Follow Image Processing,  there are 3 type of filtering :
+Filtering is a technique for modifying or enhancing an image. It's the processed value for the current pixel processed value for the current pixel depends on both itself and surrounding pixels. So Filtering is a neighborhood operation, it mean that the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel. A pixel's neighborhood is some set of pixels, defined by their locations relative to that pixel. 
+
+
+
+Follow Image Processing,  there are 4 type of filtering :
 \begin{itemize}
 	\item  Median Filter.
 
@@ -258,10 +266,18 @@ title('Noise Removed by Wiener Filter');
 
 \includegraphics{Wiener.png}
 
-\newpage
-
 \section{ Comparison Of The Results }
-We use Mean Error Square(MSE) then creat table of Comparison Of The Results as below:
+In statistics, the mean squared error (MSE) measures the average of the squares of the errors. It mean that the difference between the estimator and what is estimated.
+\begin{center}
+$MSE =  \dfrac{1}{n} \displaystyle \sum_{i=1}^{n}(\hat{Y_i} - Y_i)^2$
+	
+\end{center}
+
+
+With this report, we use Mean Error Square(MSE) to compare the original image with images use difference filter. From this, we consider about noise removal method which is the best.
+
+The table of Comparison Of The Results as below:
+
 \begin{center}
 \begin{tabular}{|c|c|}
 	\hline 
@@ -279,7 +295,7 @@ We use Mean Error Square(MSE) then creat table of Comparison Of The Results as b
 \end{center} 
 
 
-With 4 method to remove noise from images by filter. Follow results which we obtain and compare to original images. We can see result of median filter and Weiner filter are the best of results.  
+With 4 method to remove noise from images by filter. Follow results which we obtain and compare to original images. We can see result of Average filter are the best of results because MSE is the smallest.
 
 
 
