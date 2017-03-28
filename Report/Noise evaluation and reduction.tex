@@ -21,12 +21,12 @@
 \section{Noise}
 Noises always appear around our lives everywhere. For example, noise from vehicles, factories or construction sites... Moreover noise also appears in the images. First, we are going to research about images noise.
 
-Image noise is one of problem electronic because it can be appear by the sensor and circuitry from scanner or digital camera. Moreover, film grain and noise of an ideal photon detector are also cause. From above causes , brightness or color information in images will be change. Image noise is unlike by product of image capture that have many different information.
+Image noise can be appear by the sensor and circuitry from scanner or digital camera. Moreover, film grain and noise of an ideal photon detector are also cause. From above causes , brightness or color information in images will be change. Image noise is unlike by product of image capture that have many different information.
 
-Next, it is quality of camera. Although camera technology is very improve over the past decade, it still has not totally remove noise for images. Little dots or speckles over an image area that should be clear and smooth usually appear. So now, researchers still find to way which improve about camera to help us have image is better.   
+Next, it is quality of camera. Although camera technology is very improve over the past decade, it still has not totally remove noise for images. So now, researchers still find to way which improve about camera to help us have image is better.   
 
 
-Noise can appear in our photo for different reasons. When we use high ISO settings on our camera. Noise signal increases with the light signal when high ISO is used, therefore our camera will capture more light to illuminate the scene, but graininess will be more apparent. When an image sensor heats up, photons separate from the photos and taint other photos. Long exposures also give our image greater risk of showing image noise, since the sensor is left open to gather more image data and this includes electrical noise.
+Noise can appear in our photo for different reasons. Noise signal increases with the light signal when high ISO is used, therefore our camera will capture more light to illuminate the scene, but graininess will be more apparent. When an image sensor became heats up, photons separate from the iamges and destroy other images. Long exposures also give our image greater risk of showing image noise, since the sensor is left open to gather more image data and this includes electrical noise.
 
 Noise is the cause of errors from image when in pixel values that do not reflect the true intensities of the real scene. There are 3 types of image noise as below :
 
@@ -66,7 +66,7 @@ Noise removal is very important task in image processing. It will help image res
 Spatial filtering is a form of finite impulse response (FIR) filtering. The filter is a mask of weights arranged in a rectangular pattern. It mean that sliding the mask along the image and performing a multiply and accumulate operation on the pixels covered by the mask.
 
 
-Filtering is a technique for decreasing or increasing an image. It's the processed value for the current pixel which depends on both itself and surrounding pixels.
+Filtering is technique which can be decreasing or increasing an image. It's the processed value for the current pixel which depends on both itself and surrounding pixels.
 So filtering is a neighborhood operation, it mean that the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel. A pixel's neighborhood is some set of pixels, defined by their locations relative to that pixel. 
 
 Follow Image Processing,  there are 4 type of filtering :
@@ -74,7 +74,7 @@ Follow Image Processing,  there are 4 type of filtering :
 \begin{itemize}
 	\item  Median Filter.
 
-The median filter is a nonlinear digital filtering technique.  Remove noise is improve the results of later processing (for example, edge detection on an image). So median filtering is very widely used in image processing and it preserves edges while removing noise under certain conditions.
+The median filter is a nonlinear digital filtering technique. So median filtering is very widely used in image processing and it preserves edges while removing noise under certain conditions.
 
 	\item  Average Filter.
 	
@@ -269,7 +269,7 @@ title('Noise Removed by Wiener Filter');
 \includegraphics{Wiener.png}
 
 \section{ Comparison Of The Results }
-In statistics, the mean squared error (MSE) measures the average of the squares of the errors. It mean that the difference between the estimator and what is estimated.
+In statistics, the mean squared error (MSE) is used to calculate the average of the squares of the errors. It mean that the difference between the estimator and what is estimated.
 \begin{center}
 $MSE =  \dfrac{1}{n} \displaystyle \sum_{i=1}^{n}(\hat{Y_i} - Y_i)^2$
 	
