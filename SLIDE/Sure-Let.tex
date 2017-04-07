@@ -1,0 +1,397 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+	
+	% The Beamer class comes with a number of default slide themes
+	% which change the colors and layouts of slides. Below this is a list
+	% of all the themes, uncomment each in turn to see what they look like.
+	
+	%\usetheme{default}
+	%\usetheme{AnnArbor}
+	%\usetheme{Antibes}
+	%\usetheme{Bergen}
+	%\usetheme{Berkeley}
+	%\usetheme{Berlin}
+	%\usetheme{Boadilla}
+	%\usetheme{CambridgeUS}
+	%\usetheme{Copenhagen}
+	%\usetheme{Darmstadt}
+	%\usetheme{Dresden}
+	%\usetheme{Frankfurt}
+	%\usetheme{Goettingen}
+	%\usetheme{Hannover}
+	%\usetheme{Ilmenau}
+	%\usetheme{JuanLesPins}
+	%\usetheme{Luebeck}
+	\usetheme{Madrid}
+	%\usetheme{Malmoe}
+	%\usetheme{Marburg}
+	%\usetheme{Montpellier}
+	%\usetheme{PaloAlto}
+	%\usetheme{Pittsburgh}
+	%\usetheme{Rochester}
+	%\usetheme{Singapore}
+	%\usetheme{Szeged}
+	%\usetheme{Warsaw}
+	
+	% As well as themes, the Beamer class has a number of color themes
+	% for any slide theme. Uncomment each of these in turn to see how it
+	% changes the colors of your current slide theme.
+	
+	%\usecolortheme{albatross}
+	%\usecolortheme{beaver}
+	%\usecolortheme{beetle}
+	%\usecolortheme{crane}
+	%\usecolortheme{dolphin}
+	%\usecolortheme{dove}
+	%\usecolortheme{fly}
+	%\usecolortheme{lily}
+	%\usecolortheme{orchid}
+	%\usecolortheme{rose}
+	%\usecolortheme{seagull}
+	%\usecolortheme{seahorse}
+	%\usecolortheme{whale}
+	%\usecolortheme{wolverine}
+	
+	%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+	%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+	
+	%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[SURE-LET APPROACH]{Main Topic } % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Hoang Duc Viet} % Your name
+\institute[USTH] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+	ICT Lab \\ % Your institution for the title page
+	\medskip
+	\textit{viethdweb@gmail.com} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+	
+	\begin{frame}
+		\titlepage % Print the title page as the first slide
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+		\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+	\end{frame}
+	
+	%----------------------------------------------------------------------------------------
+	%	PRESENTATION SLIDES
+	%----------------------------------------------------------------------------------------
+	
+	%------------------------------------------------
+	\section{INTRODUCTION} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+	%------------------------------------------------
+	
+	\subsection{SURE-LET Approach} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+	
+	\begin{frame}
+		\frametitle{INTRODUCTION}
+		A new approach to image denoising,based on the image-domain minimization of an estimate of the
+		mean squared error.
+		
+	\begin{itemize}
+		\item  Stein's unbiased risk estimate (SURE)
+		\item  Linear expansion of thresholds (LET)
+		\item  Evaluate SURE-LET denoising performances
+		by comparing PSNR
+	\end{itemize}
+	\end{frame}
+	
+	%------------------------------------------------
+	
+	\begin{frame}
+		\frametitle{Topic Points}
+		\begin{itemize}
+			\item  Theoretical Background
+		
+		\
+		
+			\item SURE-LET Formula 
+			
+			\
+			
+			\item Comparison With State-of-the-Art Denoising Schemes
+
+		
+		\end{itemize}
+	\end{frame}
+	
+	%------------------------------------------------
+	
+	\begin{frame}
+		\frametitle{Theoretical Background}
+\begin{block}{MSE}
+
+$MSE=\frac{1}{N}\displaystyle\sum_{n=1}^{N}|\hat{x_n}-x_n|^2 \Leftrightarrow MSE=\frac{1}{N}||\hat{x}-x||^2$ 
+	\end{block}
+
+
+	\end{frame}
+	
+	%------------------------------------------------
+	\begin{frame}
+			\frametitle{Theoretical Background (1)}
+	\begin{block}{Lemma}
+		\includegraphics{lemma.png}
+	\end{block}
+
+\end{frame}
+		%------------------------------------------------
+\begin{frame}
+	\frametitle{Theoretical Background (2)}
+	\begin{block}{Theorem}
+	\includegraphics{proof.png}	
+	\end{block}
+\end{frame}	
+		%------------------------------------------------
+\begin{frame}
+	\frametitle{SURE-LET Formula }
+\begin{block}{LET}
+(LET: linear expansion of thresholds)
+
+$F(y)=\displaystyle\sum_{k=1}^{K}a_kF_k(y) $
+\end{block}
+
+
+\end{frame}	
+	%------------------------------------------------
+	\begin{frame}
+		\frametitle{SURE-LET Formula}
+		From Theorem and Let above, we combine them so we have SURE-LET formula as below : 	
+		
+		\
+
+\includegraphics{surelet.png}	
+\end{frame}	
+	
+	
+	
+	
+	
+	%------------------------------------------------
+	\begin{frame}
+		\frametitle{ Pointwise SURE-LET Transform Denoising}
+		A function of the noisy
+		input coefficients :
+		\begin{center}
+			\includegraphics{input.png}
+		\end{center}
+		
+		A linear
+		expansion of denoising algorithms $F_k$ :
+		\begin{center}
+			\includegraphics{input1.png}
+		\end{center}
+		
+	\end{frame}
+	
+	%------------------------------------------------
+	\section{Second Section}
+	%------------------------------------------------
+	
+	\begin{frame}
+		\frametitle{Pointwise SURE-LET Transform Denoising 1}
+\begin{itemize}
+	\item Evaluation of the Divergence Term ----- $\alpha$ 
+	\item Influence of the Boundary Extensions
+	\item Applications to Standard Linear Transforms
+\end{itemize}
+
+\end{frame}
+	
+	%------------------------------------------------
+	
+	\begin{frame}
+		\frametitle{Pointwise SURE-LET Transform Denoising 2}
+
+	
+	\
+	\begin{block}{\textbf{Corollary:}}
+			\includegraphics{Corollary.png}
+	\end{block}
+	
+	
+
+	
+	\end{frame}
+	
+	%------------------------------------------------
+	
+	\begin{frame}
+\frametitle{Pointwise SURE-LET Transform Denoising 3}
+	\textbf{Evaluation of the Divergence Term ----- $\alpha$ :}
+	
+	\
+	
+	
+	\includegraphics{Corollary1.png}
+	
+	\end{frame}
+	
+	%------------------------------------------------
+	
+	\begin{frame}
+		\frametitle{Pointwise SURE-LET Transform Denoising 4}
+\includegraphics{Corollary2.png}	
+	\end{frame}
+	
+	%------------------------------------------------
+	
+	\begin{frame}{Pointwise SURE-LET Transform Denoising 5}
+\textbf{Influence of the Boundary Extensions:}
+	
+	\
+	
+	\includegraphics{Corollary3.png}
+	
+\end{frame}
+
+	
+	
+	%------------------------------------------------
+	
+
+		\begin{frame}{Pointwise SURE-LET Transform Denoising 6}
+
+\textbf{Applications to Standard Linear Transforms:}
+\begin{block}{Nonredundant transforms:}
+\includegraphics{Corollary4.png}
+\end{block}
+
+
+
+
+	
+	
+	\end{frame}
+	
+
+	
+	%------------------------------------------------
+	
+	
+	
+	\begin{frame}{Pointwise SURE-LET Transform Denoising 7}
+	
+	\begin{block}{Undecimated filterbank transforms:}
+		\includegraphics{Corollary5.png}
+	\end{block}
+	
+\end{frame}
+
+
+
+%------------------------------------------------
+	
+	
+	
+	\begin{frame}{COMPARISON \& RESULTS}
+	\begin{itemize}
+		\item  Wavelet-Domain Versus Image-Domain Optimization
+		\item Periodic Versus Symmetric Boundary Extensions
+		\item Comparison With State-of-the-Art Denoising Schemes
+	\end{itemize}
+	
+	
+\end{frame}
+
+
+
+%------------------------------------------------
+	
+	
+	\begin{frame}{COMPARISON \& RESULTS 1}
+		\begin{center}
+	\includegraphics{result4.png}
+	\end{center}
+
+		
+
+
+\end{frame}
+
+
+
+%------------------------------------------------
+	
+	
+	\begin{frame}{COMPARISON \& RESULTS 2}
+	
+		(a) Part of the noise-free Boat image. (b) A noisy version of it: PSNR =
+	22:11 dB. (c) BiShrink denoising result: PSNR = 29:99 dB. (d) ProbShrink
+	denoising result: PSNR = 29:97 dB. (e) BLS-GSM denoising result: PSNR =
+	30:36 dB. (f) UWT SURE-LET denoising result: PSNR = 30:24 dB.
+	
+\end{frame}	
+%------------------------------------------------
+\begin{frame}{CONCLUSION}
+SURE-LET denoising procedure gives quite a decent visual quality compared to the best state-of-the-art spatially adaptive method.
+\end{frame}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\begin{frame}
+		\Huge{\centerline{The End}}
+	\end{frame}
+	
+	%----------------------------------------------------------------------------------------
+	
+\end{document}
