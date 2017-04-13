@@ -113,20 +113,25 @@
 	\section{INTRODUCTION} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 	%------------------------------------------------
 	
-	\subsection{SURE-LET Approach} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+	\subsection{} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 	
 	\begin{frame}
 		\frametitle{INTRODUCTION}
-		A new approach to image denoising,based on the image-domain minimization of an estimate of the
-		mean squared error.
+		\begin{itemize}
+	\item A new approach to image denoising,based on the image-domain minimization of an estimate of the
+		mean squared error:
 		
-	\begin{itemize}
-		\item  Stein's unbiased risk estimate (SURE)
-		\item  Linear expansion of thresholds (LET)
-		\item  Evaluate SURE-LET denoising performances
-		by comparing PSNR
+	\textbf{Stein's unbiased risk estimate (SURE)}
+		\item The denoising process can
+		be expressed as a linear combination of elementary denoising
+		processes: 
+		
+	\textbf{Linear expansion of thresholds (LET)}
+		\item  Evaluate this denoising performances by comparing PSNR
 	\end{itemize}
-	\end{frame}
+	
+\textbf{$\Rightarrow$ SURE-LET Approach}
+\end{frame}
 	
 	%------------------------------------------------
 	
@@ -141,7 +146,7 @@
 			
 			\
 			
-			\item Comparison With State-of-the-Art Denoising Schemes
+			\item Summary of the Algorithm
 
 		
 		\end{itemize}
@@ -163,7 +168,8 @@ $MSE=\frac{1}{N}\displaystyle\sum_{n=1}^{N}|\hat{x_n}-x_n|^2 \Leftrightarrow MSE
 	\begin{frame}
 			\frametitle{Theoretical Background (1)}
 	\begin{block}{Lemma}
-		\includegraphics{lemma.png}
+$\varepsilon\left\{\displaystyle\sum_{n=1}^{N}f_n(y)x_n\right\}=\varepsilon\left\{\displaystyle\sum_{n=1}^{N}f_n(y)y_n\right\}-
+\sigma^2\varepsilon\underbrace{\left\{\displaystyle\sum_{n=1}^{N}\frac{\partial f_n(y)}{\partial y_n}\right\}}_{div{F(y)}}$
 	\end{block}
 
 \end{frame}
@@ -171,8 +177,23 @@ $MSE=\frac{1}{N}\displaystyle\sum_{n=1}^{N}|\hat{x_n}-x_n|^2 \Leftrightarrow MSE
 \begin{frame}
 	\frametitle{Theoretical Background (2)}
 	\begin{block}{Theorem}
-	\includegraphics{proof.png}	
-	\end{block}
+	Theorem 1: Under the same hypotheses as Lemma 1, the
+	random variable
+	
+	\
+	
+	$\epsilon=\frac{1}{N}||F(y)-y||^2 + \frac{2\sigma^2}{N}div\{F(y)\}-\sigma^2$
+
+\
+
+is an unbiased estimator of the MSE :	
+
+\
+
+$\varepsilon\{\epsilon\}=\frac{1}{N}\varepsilon \left\{||F(y)-x||^2\right\}$
+
+
+\end{block}
 \end{frame}	
 		%------------------------------------------------
 \begin{frame}
@@ -192,7 +213,20 @@ $F(y)=\displaystyle\sum_{k=1}^{K}a_kF_k(y) $
 		
 		\
 
-\includegraphics{surelet.png}	
+$\displaystyle\sum_{l=1}^{K}\underbrace{F_k(y)^T F_l(y)a_l}_{[M]_{k,l}} = \underbrace{F_k(y)^Ty-\sigma^2div\left\{F_k(y)\right\}}_{[c]_k}$    $$for \ k = 1,2...K$$	
+\begin{center}
+$\Updownarrow$ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+
+\
+
+\textbf{Ma=c} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\end{center}
+
+
+
+
+
+
 \end{frame}	
 	
 	
@@ -205,13 +239,17 @@ $F(y)=\displaystyle\sum_{k=1}^{K}a_kF_k(y) $
 		A function of the noisy
 		input coefficients :
 		\begin{center}
-			\includegraphics{input.png}
+			$\hat{x}=F(y)=R\Theta(Dy)$
 		\end{center}
 		
 		A linear
 		expansion of denoising algorithms $F_k$ :
 		\begin{center}
-			\includegraphics{input1.png}
+			$F(y)=\displaystyle\sum_{k=1}^{K}a_k \ \underbrace{R\Theta_k(Dy)}_{F_{k(y)}}$
+			
+			\
+			
+where \ $\Theta_k(.)$ \ are elementary pointwise thresholding functions.
 		\end{center}
 		
 	\end{frame}
@@ -238,8 +276,18 @@ $F(y)=\displaystyle\sum_{k=1}^{K}a_kF_k(y) $
 	
 	\
 	\begin{block}{\textbf{Corollary:}}
-			\includegraphics{Corollary.png}
-	\end{block}
+$\epsilon=\frac{1}{N}||F(y)-y||^2+\frac{2\sigma^2}{N}\alpha^T\Theta'(Dy)-\sigma^2$
+
+\	
+
+where
+\begin{itemize}
+	\item $\alpha=diag \{DR\}=\left\{[DR]_{1,1},[DR]_{2,2},..........,[DR]_{L,L}\right\}$ \ is
+	a vector made of the diagonal elements of the matrix DR;
+\item $\Theta'(DY)=\Theta'(w)=(\theta'_i(w_i))_{i\in[1;L]}$
+\end{itemize}
+
+\end{block}
 	
 	
 
@@ -255,15 +303,31 @@ $F(y)=\displaystyle\sum_{k=1}^{K}a_kF_k(y) $
 	\
 	
 	
-	\includegraphics{Corollary1.png}
+	An approximate value $\hat{\alpha}$ for $diag \{DR\}$ in finally obtained by averaging the realizations $v_i$ over I runs(typically, I = 1000 provides great accuracy)
 	
+	\begin{center}
+		$\hat\alpha=\frac{1}{I}\displaystyle\sum_{i=1}^{I}v_i$
+	\end{center}
 	\end{frame}
 	
 	%------------------------------------------------
 	
 	\begin{frame}
 		\frametitle{Pointwise SURE-LET Transform Denoising 4}
-\includegraphics{Corollary2.png}	
+Lemma 2: Let \textbf{b} be a normalized Gaussian white noise with \textbf{L} components. Then, we have the following equality:
+
+\
+
+$\varepsilon\left\{diag \{DRbb^T\}\right\}=diag\left\{DR\right\}$	
+
+\
+
+Proof:
+
+\
+
+$\varepsilon\left\{diag \{DRbb^T\}\right\}=diag\left\{DR\underbrace{\varepsilon \{bb^T\}}_{Id}\right\}$
+$$=diag\left\{DR\right\}$$
 	\end{frame}
 	
 	%------------------------------------------------
@@ -273,8 +337,22 @@ $F(y)=\displaystyle\sum_{k=1}^{K}a_kF_k(y) $
 	
 	\
 	
-	\includegraphics{Corollary3.png}
+	Usual boundary extensions are linear preprocessing applied to the available data \textbf{y} and can, therefore, be expressed in a matrix form. In particular, for a given boundary extension of length \textbf{E}, i.e., characterized by an ExN matrix \textbf{H}, the denoising process becomes
 	
+	\
+
+$F(y)=[Id_N \ 0_{N \times E}]R_{N+E^{\Theta}}\left(D_{N+E}\left[\begin{tabular}{c}
+y \\ 
+Hy \\ 
+\end{tabular} \right] \right)$
+	
+	\
+	
+\ \ \ \ \ \ \ $=R'\Theta(D'y)$
+	
+
+	
+
 \end{frame}
 
 	
@@ -286,7 +364,11 @@ $F(y)=\displaystyle\sum_{k=1}^{K}a_kF_k(y) $
 
 \textbf{Applications to Standard Linear Transforms:}
 \begin{block}{Nonredundant transforms:}
-\includegraphics{Corollary4.png}
+When is nonredundant, the divergence term $\alpha$ in Corollary is given by
+
+\
+
+$\alpha= \underbrace{ \left[ 1,1,....,1\right]^T}_{L times}$
 \end{block}
 
 
@@ -305,10 +387,64 @@ $F(y)=\displaystyle\sum_{k=1}^{K}a_kF_k(y) $
 	\begin{frame}{Pointwise SURE-LET Transform Denoising 7}
 	
 	\begin{block}{Undecimated filterbank transforms:}
-		\includegraphics{Corollary5.png}
+		Lemma 4: When \textbf{D} and \textbf{R} are periodically extended implementations of the analysis-synthesis filterbank, the divergence
+		term in Corollary is given by $\alpha=[{\alpha_1}^T, {\alpha_2}^T,....,{\alpha_J}^T]^T $ where
+		
+		\
+		
+		\begin{center}
+				$\alpha_i= \left(\displaystyle\sum_{n}\gamma_i[nN]\right)\underbrace{ \left[ 1,1,....,1\right]^T}_{N times}$
+				
+				\
+				
+				and where $\gamma_i[n]$ is the $n$th coefficient of the $\tilde{G_i}(z^{-1})G_i(z)$ filter .
+			
+		\end{center}
+	
 	\end{block}
 	
 \end{frame}
+
+\begin{frame}{Summary of the Algorithm}
+\begin{itemize}
+	\item Perform a boundary extension on the noisy image.
+	\item Perform an UWT on the extended noisy image.
+	\item \textbf{For} $i=1...J$ (number of bandpass subbands), \textbf{For} $k=1,2:$
+	\begin{itemize}
+		\item Apply the pointwise thresholding functions $t_k$ defined
+		in \textbf{A. Choosing an Efficient Thresholding Function} to the current subband $w_i$.
+\item Reconstruct the processed subband by setting all the
+other subbands to zero to obtain $F_{i,k}(y)$	
+\item Compute the first derivative of $t_k$ for each coefficient
+of the current subband $w_i$ and build the corresponding
+coordinate of \textbf{c} as exemplified by \textbf{SURE-LET Formula}
+\end{itemize}
+	
+	\item Compute the matrix \textbf{M} and deduce the optimal-in the
+	minimum SURE sense-linear parameters ’s using the
+	matrix formulation of \textbf{SURE-LET Formula}
+	\item  The noise-free image $\hat{x}$ is finally estimated by the sum of
+	each $F_{i,k}$ weighted by its corresponding SURE-optimized $a_{i,k}$
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}{Summary of the Algorithm 1}
+\begin{block}{Choosing an efficient thresholding function}
+A good choice has been experimentally found to be of the form.
+\begin{center}
+	$\theta(w)=a_i,1{t_1}(w)+a_i,2{t_2}(w)$
+	
+\end{center}
+\end{block}
+
+\begin{block}{Where}
+	\begin{center}
+		$t_1(w)=w \& t_2(w)=w\left(1-e^{-(\frac{\omega}{3\sigma})}^8 \right)$
+	\end{center}
+\end{block}
+	
+\end{frame}
+	
 
 
 
@@ -329,24 +465,26 @@ $F(y)=\displaystyle\sum_{k=1}^{K}a_kF_k(y) $
 
 
 %------------------------------------------------
-	
-	
 	\begin{frame}{COMPARISON \& RESULTS 1}
-		\begin{center}
-	\includegraphics{result4.png}
+	\begin{center}
+		\includegraphics{mse1.png}
 	\end{center}
-
-		
-
-
 \end{frame}
 
+%------------------------------------------------
+	
+\begin{frame}{COMPARISON \& RESULTS 2}
+\begin{center}
+	\includegraphics{result4.png}
+\end{center}
+
+\end{frame}
 
 
 %------------------------------------------------
 	
 	
-	\begin{frame}{COMPARISON \& RESULTS 2}
+	\begin{frame}{COMPARISON \& RESULTS 3}
 	
 		(a) Part of the noise-free Boat image. (b) A noisy version of it: PSNR =
 	22:11 dB. (c) BiShrink denoising result: PSNR = 29:99 dB. (d) ProbShrink
