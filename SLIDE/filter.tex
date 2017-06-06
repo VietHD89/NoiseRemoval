@@ -355,18 +355,20 @@ Average filter is useful for removing grain noise from a photograph.
 \begin{frame}{Gaussian Filter}
 
 Gaussian filtering is used to blur images and remove noise and detail.
-\vspace{1.5cm}
+\vspace{0.5cm}
 
 The Gaussian kernel in dimension 2:
 
 
 $G(x,y) = \dfrac{1}{2\pi\sigma^2}\exp\left[-\dfrac{(x-\mu_x)^2+(y-\mu_y)^2}{2\sigma^2}\right ]$
 
-	
+\hspace{3cm}$$\Updownarrow$$
 
-\vspace{1cm}
+\hspace{3cm}$G(x,y)=\dfrac{1}{2\pi\sigma^2}e^{-{\dfrac{x^2+y^2}{2\sigma^2}}}$	
 
-Define the Gaussian mask:
+\vspace{0.5cm}
+
+Define the Gaussian mask($\sigma$=1):
 %$$\mu = 0$$
 %$$\sigma = 0.8$$
 \begin{center}
@@ -494,6 +496,10 @@ The MSE is a measure of the quality of an estimator—it is always non-negative,
 	SURE-LET & 3.22 \\ 
 	\hline 
 \end{tabular} 
+
+\
+
+Comparison Table
 \end{center}
 \end{frame}
 
