@@ -1,0 +1,198 @@
+\documentclass[a4paper,11pt,twoside,openright]{book}
+
+
+\usepackage[utf8]{inputenc}
+%\usepackage[vietnam.english]{babel}
+
+\usepackage[T1]{fontenc}
+
+
+
+
+%\usepackage[Latin1]{inputenc}       %caractËres accentuÈs et autres
+%\usepackage[T1]{fontenc}            %cÈsure des mots accentuÈs
+%\usepackage[frenchb]{babel}         %francisation (chapitre,annexe,rÈfÈrences...)
+\usepackage{graphicx}               %insertion graphiques
+
+\usepackage{a4wide}
+%\usepackage{psfig}
+
+
+%\psfigurepath{}
+
+
+
+
+%\usepackage{times}
+
+
+%\input{transfig}
+
+
+
+\renewcommand{\thefootnote}{}
+
+%% Necessaire pour creer les index
+\usepackage{makeidx}
+\makeindex
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% MODIFY THIS PART FOR THE FIRST PAGE
+
+% change the master level 
+\def\MasterLevel{Master Thesis }
+%\def\MasterLevel{Master 1}
+
+\def\InternshipTitle{NOISE EVALUATION AND REDUCTION}
+\def\FirstName{HOANG DUC}
+\def\LastName{VIET}
+\def\HostOrganization{ICTLab - USTH }
+\def\CityName{Ha Noi}
+\def\CountryName{Viet Nam}
+\def\UniversityName{University of Science and Technology of Hanoi(USTH)}
+\def\Supervisor{Ph.D Tran Giang Son}
+
+
+
+\setlength{\textwidth}{175mm}
+%
+\setlength{\textheight}{245mm}
+
+\setlength{\topmargin}{-10mm}
+
+\setlength{\evensidemargin}{-8mm}
+
+\setlength{\oddsidemargin}{-8mm}
+
+% ----------------------- DEBUT DOCUMENT ---------------------------
+
+\begin{document}
+
+
+
+\pagestyle{plain}
+
+
+
+\pagenumbering{Roman}
+
+
+% ----------------- DEFINITION DU TITRE ET DES AUTEURS ---------------------------
+
+\include{Title}
+
+% ----------------------- PAGE VIDE ---------------------------
+
+
+
+
+\include{Signature}
+
+
+
+\setcounter{page}{1}
+
+
+
+% ----------------------- ACKNOWLEDGEMENTS ---------------------------
+
+\include{Acknowledgements}
+
+
+
+
+% ----------------------- RESUME ---------------------------
+
+
+\include{Abstract}
+
+% ----------------------- PAGE VIDE ---------------------------
+
+
+% ----------------------- REMERCIEMENTS ---------------------------
+
+%\include{Thanks}
+
+% ----------------------- TABLE DES MATIERES ---------------------------
+
+
+
+\tableofcontents{}
+
+
+\newpage
+
+
+\listoffigures{}
+
+\newpage
+
+\listoftables
+
+
+\newpage
+
+
+
+\chapter*{List of Abreviations}
+
+
+\newpage
+
+
+
+
+% ----------------------- TABLE DES FIGURES ---------------------------
+%\listoffigures{}
+
+% ----------------------- TABLE DES TABLES ---------------------------
+%\listoftables{}
+
+% ----------------------- TABLE DES TABLES ---------------------------
+%\listoflistings{}
+
+% ----------------------- CHAPITRE ---------------------------
+\pagenumbering{arabic}
+
+\include{Introduction}
+
+
+
+
+
+% ----------------------- CHAPITRE ---------------------------
+
+\include{StateOfTheArt}
+
+% ----------------------- CHAPITRE ---------------------------
+
+\include{Contribution}
+
+% ----------------------- CHAPITRE ---------------------------
+
+\include{Results}
+
+
+% ----------------------- CHAPITRE ---------------------------
+
+\include{Conclusion}
+
+% ----------------------- BIBLIOGRAPHIE ---------------------------
+
+\bibliography{Biblio}
+\bibliographystyle{unsrt}
+
+% ----------------------- ANNEXES ---------------------------
+
+\appendix
+
+\include{Appendix}
+
+
+
+
+\end{document}

@@ -1,0 +1,28 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Context}{1}
+\contentsline {subsection}{\numberline {1.1.1}Internship context}{2}
+\contentsline {section}{\numberline {1.2}Problematic}{2}
+\contentsline {subsection}{\numberline {1.2.1}Noises}{2}
+\contentsline {subsection}{\numberline {1.2.2}Denoise}{3}
+\contentsline {section}{\numberline {1.3}Report organization}{4}
+\contentsline {chapter}{\numberline {2}State of the art}{5}
+\contentsline {section}{\numberline {2.1}Noise Removal in Image Processing using Median}{5}
+\contentsline {section}{\numberline {2.2}The Sure-Let Approach to Image Denoising}{6}
+\contentsline {section}{\numberline {2.3}Study on Methods of Noise Reduction in a Stripped Image}{7}
+\contentsline {subsection}{\numberline {2.3.1}Low pass filter}{7}
+\contentsline {subsection}{\numberline {2.3.2}Gray Value Substitution }{7}
+\contentsline {subsection}{\numberline {2.3.3}Wavelet transformation }{8}
+\contentsline {subsection}{\numberline {2.3.4}Results and comparisons }{8}
+\contentsline {section}{\numberline {2.4}Different Noise Types and Digital Image Processing}{8}
+\contentsline {subsection}{\numberline {2.4.1}TYPES OF NOISE}{8}
+\contentsline {subsection}{\numberline {2.4.2}DIFFERENT TYPES OF LINEAR AND NON-LINEAR FILTERS}{8}
+\contentsline {subsection}{\numberline {2.4.3}CONCLUSION AND FUTURE SCOPE}{9}
+\contentsline {section}{\numberline {2.5}Impulse Noise Reduction methods in Digital images }{9}
+\contentsline {subsection}{\numberline {2.5.1}Linear Filters}{9}
+\contentsline {subsection}{\numberline {2.5.2}Non Linear filters}{9}
+\contentsline {subsection}{\numberline {2.5.3}Conclusion}{9}
+\contentsline {chapter}{\numberline {3}Contribution}{11}
+\contentsline {chapter}{\numberline {4}Results}{13}
+\contentsline {chapter}{\numberline {5}Conclusion}{15}
+\contentsline {chapter}{\numberline {A}Detail about ...}{19}
+\contentsline {chapter}{\numberline {B}Mathematical demonstration}{21}

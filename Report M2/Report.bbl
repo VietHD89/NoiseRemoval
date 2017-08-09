@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{Abr98}
+David Abramson, Kate Smith, Paul Logothetis, and David Duke.
+\newblock Fpga based implementation of a hopfield neural network for solving
+  constraint satisfaction problems.
+\newblock In {\em 24 th. EUROMICRO Conference Volume 2 (EUROMICRO'98), 1998.},
+  page p. 20688, 1998.
+
+\bibitem{Hau03b}
+Christian Haubelt, Dirk Koch, and J.Teich.
+\newblock {ReCoNet}: {Modeling} and {Implementation} of {Fault} {Tolerant}
+  {Distributed} {Reconfigurable} {Hardware}.
+\newblock In {\em Proc. of 16th {Symposium} on {Integrated} {Circuits} and
+  {Systems} {Design} {(SBCCI2003)}}, pages 343--348, Sao Paulo, Brazil,
+  September 2003.
+
+\bibitem{Ham95}
+B.~Hamidzadeh, D.~Lilja, and Y.~Atif.
+\newblock Dynamic scheduling techniques for heterogeneous computing systems.
+\newblock {\em Journal of Concurrency: Practice and Experience}, 7:633--652,
+  October 1995.
+
+\bibitem{Hau03a}
+Christian Haubelt, Dirk Koch, and J.Teich.
+\newblock Basic os support for distributed reconfigurable hardware.
+\newblock In {\em Proc. of the Third International Workshop on Systems,
+  Architectures, Modeling, and Simulation}, pages 18--22, Samos, Greece, 2003.
+
+\end{thebibliography}
