@@ -69,7 +69,10 @@
 \setlength{\oddsidemargin}{-8mm}
 
 % ----------------------- DEBUT DOCUMENT ---------------------------
-
+\usepackage{amsmath}
+\usepackage{listings}
+\lstset{language=Matlab}
+\lstset{tabsize=2}
 \begin{document}
 
 
@@ -85,6 +88,8 @@
 
 \include{Title}
 
+
+\let\cleardoublepage\clearpage
 % ----------------------- PAGE VIDE ---------------------------
 
 
@@ -103,7 +108,7 @@
 \include{Acknowledgements}
 
 
-
+\let\cleardoublepage\clearpage
 
 % ----------------------- RESUME ---------------------------
 
@@ -124,24 +129,24 @@
 \tableofcontents{}
 
 
-\newpage
+%\newpage
 
 
-\listoffigures{}
+%\listoffigures{}
 
-\newpage
+%\newpage
 
-\listoftables
-
-
-\newpage
+%\listoftables
 
 
+%\newpage
 
-\chapter*{List of Abreviations}
 
 
-\newpage
+%\chapter*{List of Abreviations}
+
+
+%\newpage
 
 
 
@@ -183,14 +188,14 @@
 
 % ----------------------- BIBLIOGRAPHIE ---------------------------
 
-\bibliography{Biblio}
-\bibliographystyle{unsrt}
+%\bibliography{Biblio}
+%\bibliographystyle{unsrt}
 
 % ----------------------- ANNEXES ---------------------------
 
-\appendix
+%\appendix
 
-\include{Appendix}
+%\include{Appendix}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.7.20)  8 AUG 2017 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.7.20)  23 AUG 2017 17:21
 entering extended mode
 **Report.tex
 (Report.tex
@@ -290,36 +290,151 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 \@indexfile=\write3
 
 Writing index file Report.idx
-(Report.aux (Title.aux) (Signature.aux) (Acknowledgements.aux) (Abstract.aux)
-(Introduction.aux) (StateOfTheArt.aux) (Contribution.aux) (Results.aux)
-(Conclusion.aux) (Appendix.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen105
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks18
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks19
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count101
+\lst@gtempboxa=\box28
+\lst@token=\toks22
+\lst@length=\count102
+\lst@currlwidth=\dimen114
+\lst@column=\count103
+\lst@pos=\count104
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count105
+\lst@lineno=\count106
+\lst@maxwidth=\dimen117
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count107
+\lst@skipnumbers=\count108
+\lst@framebox=\box29
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+) (Report.aux
+(Title.aux) (Signature.aux) (Acknowledgements.aux) (Abstract.aux)
+(Introduction.aux) (StateOfTheArt.aux) (Contribution.aux) (Results.aux)
+(Conclusion.aux
+
+LaTeX Warning: Label `Author' multiply defined.
+
+
+LaTeX Warning: Label `Author' multiply defined.
+
+
+LaTeX Warning: Label `Author' multiply defined.
+
+
+LaTeX Warning: Label `Author' multiply defined.
+
+
+LaTeX Warning: Label `Author' multiply defined.
+
+
+LaTeX Warning: Label `Author' multiply defined.
+
+
+LaTeX Warning: Label `Author' multiply defined.
+
+
+LaTeX Warning: Label `Author' multiply defined.
+
+
+LaTeX Warning: Label `Author' multiply defined.
+
+))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count89
-\scratchdimen=\dimen105
-\scratchbox=\box26
-\nofMPsegments=\count90
-\nofMParguments=\count91
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count92
-\MPscratchDim=\dimen106
-\MPnumerator=\count93
-\makeMPintoPDFobject=\count94
-\everyMPtoPDFconversion=\toks18
-) (Title.tex <images/logo-1_39.png, id=1, 259.97125pt x 171.64125pt>
+\scratchcounter=\count109
+\scratchdimen=\dimen118
+\scratchbox=\box30
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen119
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks24
+)
+\c@lstlisting=\count115
+ (Title.tex <images/logo-1_39.png, id=1, 259.97125pt x 171.64125pt>
 File: images/logo-1_39.png Graphic file (type png)
 
 <use images/logo-1_39.png>
@@ -329,11 +444,7 @@ Package pdftex.def Info: images/logo-1_39.png used on input line 13.
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/logo-1_39.png>] 
-(Signature.tex [2
-
-
-
-]
+(Signature.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
@@ -378,196 +489,236 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--35
 
  []
 
-) [3] (Acknowledgements.tex) [1
+) [2
 
 
 
-] (Abstract.tex [2
+] (Acknowledgements.tex) [1
 
 
 
-]) [3] [4
+] (Abstract.tex) [2
 
 
-] (Report.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
-)
+
+] (Report.toc)
 \tf@toc=\write4
-
-[5] [6
-
-] (Report.lof)
-\tf@lof=\write5
- [7] [8
-
-] (Report.lot)
-\tf@lot=\write6
- [9] [10
-
-] [11] (Introduction.tex
-Chapter 1.
-
-Underfull \vbox (badness 2961) has occurred while \output is active []
-
  [1
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
+(Introduction.tex
+Chapter 1.
+[2
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 78.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
 
-<fix.png, id=62, 108.405pt x 108.405pt>
+<fix.png, id=33, 108.405pt x 108.405pt>
 File: fix.png Graphic file (type png)
  <use fix.png>
 Package pdftex.def Info: fix.png used on input line 94.
 (pdftex.def)             Requested size: 108.40472pt x 108.40472pt.
- [2 <./fix.png>]
-<random.png, id=67, 108.405pt x 108.405pt>
+
+<random.png, id=34, 108.405pt x 108.405pt>
 File: random.png Graphic file (type png)
  <use random.png>
-Package pdftex.def Info: random.png used on input line 106.
+Package pdftex.def Info: random.png used on input line 112.
 (pdftex.def)             Requested size: 108.40472pt x 108.40472pt.
-
-<banding.png, id=68, 108.405pt x 108.405pt>
+ [3 <./fix.png>]
+<banding.png, id=40, 108.405pt x 108.405pt>
 File: banding.png Graphic file (type png)
  <use banding.png>
-Package pdftex.def Info: banding.png used on input line 121.
+Package pdftex.def Info: banding.png used on input line 130.
 (pdftex.def)             Requested size: 108.40472pt x 108.40472pt.
- [3 <./random.png> <./banding.png>]) [4] (StateOfTheArt.tex
+ [4 <./random.png> <./banding.png>]) [5] (StateOfTheArt.tex
 Chapter 2.
-[5
+
+Underfull \vbox (badness 5637) has occurred while \output is active []
+
+ [6
 
 
 
-] <surelet1.png, id=79, 376.40625pt x 121.95563pt>
+]
+<surelet1.png, id=50, 376.40625pt x 121.95563pt>
 File: surelet1.png Graphic file (type png)
  <use surelet1.png>
-Package pdftex.def Info: surelet1.png used on input line 81.
+Package pdftex.def Info: surelet1.png used on input line 71.
 (pdftex.def)             Requested size: 376.40532pt x 121.9553pt.
 
-[6 <./surelet1.png>] <lowpass.png, id=88, 383.18156pt x 181.42781pt>
-File: lowpass.png Graphic file (type png)
-
-<use lowpass.png>
-Package pdftex.def Info: lowpass.png used on input line 111.
-(pdftex.def)             Requested size: 383.18062pt x 181.42737pt.
- <gray.png, id=89, 395.22656pt x 185.94469pt>
+<gray.png, id=51, 395.22656pt x 185.94469pt>
 File: gray.png Graphic file (type png)
  <use gray.png>
-Package pdftex.def Info: gray.png used on input line 120.
+Package pdftex.def Info: gray.png used on input line 100.
 (pdftex.def)             Requested size: 395.22559pt x 185.94421pt.
 
-<wave.png, id=90, 377.91188pt x 184.43906pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./surelet1.png>] <wave.png, id=55, 377.91188pt x 184.43906pt>
 File: wave.png Graphic file (type png)
  <use wave.png>
-Package pdftex.def Info: wave.png used on input line 130.
+Package pdftex.def Info: wave.png used on input line 110.
 (pdftex.def)             Requested size: 377.91095pt x 184.4386pt.
- [7 <./lowpass.png> <./gray.png>] [8 <./wave.png>]) [9] (Contribution.tex [10
+ [8 <./gray.png> <./wave.png>] [9] [10] <10.png, id=66, 300.3722pt x 82.80937pt
+>
+File: 10.png Graphic file (type png)
 
-
-
-]
+<use 10.png>
+Package pdftex.def Info: 10.png used on input line 283.
+(pdftex.def)             Requested size: 300.37144pt x 82.80916pt.
+) [11 <./10.png>] (Contribution.tex
 Chapter 3.
+<lena1.png, id=70, 150.5625pt x 150.5625pt>
+File: lena1.png Graphic file (type png)
+ <use lena1.png>
+Package pdftex.def Info: lena1.png used on input line 15.
+(pdftex.def)             Requested size: 150.56212pt x 150.56212pt.
+ [12
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
+
+ <./lena1.png>]
+<median1.png, id=77, 196.48407pt x 194.97844pt>
+File: median1.png Graphic file (type png)
+ <use median1.png>
+Package pdftex.def Info: median1.png used on input line 51.
+(pdftex.def)             Requested size: 196.48358pt x 194.97795pt.
+ [13 <./median1.png>]
+Overfull \hbox (44.29845pt too wide) in paragraph at lines 154--155
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [11] (Results.tex [12
+<a3x3.png, id=82, 186.6975pt x 185.94469pt>
+File: a3x3.png Graphic file (type png)
+ <use a3x3.png>
+Package pdftex.def Info: a3x3.png used on input line 170.
+(pdftex.def)             Requested size: 186.69704pt x 185.94421pt.
 
+<a5x5.png, id=83, 186.6975pt x 187.45032pt> [14 <./a3x3.png>]
+File: a5x5.png Graphic file (type png)
+ <use a5x5.png>
+Package pdftex.def Info: a5x5.png used on input line 174.
+(pdftex.def)             Requested size: 186.69704pt x 187.44984pt.
 
+<a7x7.png, id=88, 186.6975pt x 188.20313pt>
+File: a7x7.png Graphic file (type png)
+ <use a7x7.png>
+Package pdftex.def Info: a7x7.png used on input line 178.
+(pdftex.def)             Requested size: 186.69704pt x 188.20265pt.
+ [15 <./a5x5.png> <./a7x7.png>] <b3x3.png, id=97, 111.7776pt x 110.814pt>
+File: b3x3.png Graphic file (type png)
+ <use b3x3.png>
+Package pdftex.def Info: b3x3.png used on input line 284.
+(pdftex.def)             Requested size: 111.77731pt x 110.8137pt.
 
-]
+<b5x5.png, id=98, 111.2958pt x 111.2958pt>
+File: b5x5.png Graphic file (type png)
+ <use b5x5.png>
+Package pdftex.def Info: b5x5.png used on input line 288.
+(pdftex.def)             Requested size: 111.29552pt x 111.29552pt.
+
+<b7x7.png, id=99, 110.3322pt x 110.814pt>
+File: b7x7.png Graphic file (type png)
+ <use b7x7.png>
+Package pdftex.def Info: b7x7.png used on input line 292.
+(pdftex.def)             Requested size: 110.33191pt x 110.8137pt.
+ [16 <./b3x3.png> <./b5x5.png> <./b7x7.png>] <Wiener.png, id=107, 337.26pt x 11
+6.5956pt>
+File: Wiener.png Graphic file (type png)
+
+<use Wiener.png>
+Package pdftex.def Info: Wiener.png used on input line 324.
+(pdftex.def)             Requested size: 337.25917pt x 116.5953pt.
+) [17 <./Wiener.png>] (Results.tex
 Chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-) [13] (Conclusion.tex [14
+[18
 
 
 
-]
+] <lena.png, id=115, 75.28125pt x 74.52844pt>
+File: lena.png Graphic file (type png)
+ <use lena.png>
+Package pdftex.def Info: lena.png used on input line 37.
+(pdftex.def)             Requested size: 75.28105pt x 74.52824pt.
+
+<cameraman.png, id=116, 75.28125pt x 75.28125pt>
+File: cameraman.png Graphic file (type png)
+ <use cameraman.png>
+Package pdftex.def Info: cameraman.png used on input line 68.
+(pdftex.def)             Requested size: 75.28105pt x 75.28105pt.
+
+<coco.png, id=117, 75.28125pt x 75.28125pt>
+File: coco.png Graphic file (type png)
+ <use coco.png>
+Package pdftex.def Info: coco.png used on input line 97.
+(pdftex.def)             Requested size: 75.28105pt x 75.28105pt.
+ [19 <./lena.png> <./cameraman.png>] <house.png, id=123, 74.52844pt x 74.52844p
+t>
+File: house.png Graphic file (type png)
+ <use house.png>
+Package pdftex.def Info: house.png used on input line 126.
+(pdftex.def)             Requested size: 74.52824pt x 74.52824pt.
+
+<Peppers.png, id=124, 74.52844pt x 74.52844pt>
+File: Peppers.png Graphic file (type png)
+ <use Peppers.png>
+Package pdftex.def Info: Peppers.png used on input line 155.
+(pdftex.def)             Requested size: 74.52824pt x 74.52824pt.
+ [20 <./coco.png> <./house.png>]) [21 <./Peppers.png>] (Conclusion.tex
 Chapter 5.
+[22
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-) [15] (Report.bbl [16
-
-
-]) [17] (Appendix.tex [18
 
 
 ]
-Appendix A.
-[19] [20
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 70.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)) [23
 
-]
-Appendix B.
-) [21] (Report.aux (Title.aux) (Signature.aux) (Acknowledgements.aux)
-(Abstract.aux) (Introduction.aux) (StateOfTheArt.aux) (Contribution.aux)
-(Results.aux) (Conclusion.aux) (Appendix.aux)) ) 
+] (Report.aux (Title.aux) (Signature.aux) (Acknowledgements.aux) (Abstract.aux)
+
+(Introduction.aux) (StateOfTheArt.aux) (Contribution.aux) (Results.aux)
+(Conclusion.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1769 strings out of 493698
- 21143 string characters out of 3144412
- 78075 words of memory out of 3000000
- 5006 multiletter control sequences out of 15000+200000
- 14799 words of font info for 34 fonts, out of 3000000 for 9000
+ 4661 strings out of 493698
+ 57251 string characters out of 3144412
+ 154249 words of memory out of 3000000
+ 7862 multiletter control sequences out of 15000+200000
+ 15787 words of font info for 38 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,9n,23p,1419b,211s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fo
-nts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/c
-m-super/sfbx2074.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/s
-fbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on Report.pdf (35 pages, 766599 bytes).
+ 27i,7n,40p,1392b,1577s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sf
+bx1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
+uper/sfrm2074.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti
+1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb>
+
+Output written on Report.pdf (27 pages, 1486201 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
+ 196 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
