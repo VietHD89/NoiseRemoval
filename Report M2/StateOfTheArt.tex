@@ -12,21 +12,21 @@ This paper was written by Monika Kohli and Harmeet Kaur. Authors research and an
 \
 
 \textbf{Amplifier noise (Gaussian noise):} 
-is the sum of the true pixel value and a random 
+is the sum of the actual pixel value and a random 
 
 \
 
-\textbf{Quantization noise (Uniform noise):}It is caused by quantizing the pixels to a number of discrete levels called as quantization noise. 
+\textbf{Quantization noise (Uniform noise):} It appears because quantization process the pixels to a number of discrete levels
 
 \
 
-\textbf{Multiplicative noise (Speckle noise):} can be modeled by random value multiplications with pixel values of the image.
+\textbf{Multiplicative noise (Speckle noise):} It appears because random value multiplications with pixel values of the image as modeled process.
 
 
 
 \
 
-\textbf{Periodic noise(Stationary noise):}It is caused by interference between electronic components and appear from interference during image acquisition.
+\textbf{Periodic noise(Stationary noise):}It appears because attend between electronic components and appear from interference during image acquisition.
 %\end{itemize}
 \vspace{0.5cm}
 
@@ -36,15 +36,14 @@ After image noise can be classified as above, characteristics of each type are s
 %\textbf{Conclusion}
 
 Finally, Comparison of filters when used PSNR to calculate quality of images with 3 methods : Median filter, Adaptive median filter, Proposed Median Filter. They obtained result show that the proposed method is the best. In future, result can be improved by different noise such as : Gaussian noise, Speckle noise etc
-\vspace{1.5cm}
+\vspace{2cm}
 
 \section{The Sure-Let Approach to Image Denoising [3]}
 
-The paper was written by Thierry Blu and Florian Luisier. It's a new approach to image denoising, based on the image-domain minimization of an estimate of the mean squared error(MSE).
+ [Thierry Blu \& Florian Luisier]
 \vspace{0.5cm}
 
-
-A new approach to image denoising, based on the image-domain minimization of an estimate of the mean squared error: Stein’s unbiased risk estimate (SURE). The denoising process can be expressed as a linear combination of elementary denoising processes: Linear expansion of thresholds (LET). Evaluate this denoising performances by comparing PSNR. Combined 3 step above to  SURE-LET Approach.
+It’s a new approach to noise removal by the image-domain minimization of an estimate of the mean squared error(MSE). They called  Stein’s unbiased risk estimate (SURE).  They called  Linear expansion of thresholds  (LET) by combination of elementary denoising processes.  Evaluate this denoising performances by comparing PSNR. Combined 3 step above to  SURE-LET Approach.
 \vspace{1cm}
 
 %We have SURE-LET Formula as below :
@@ -139,12 +138,12 @@ Mean Filter: Mean filter is a type of linear filter that computes average value 
 
 \
 
-Median Filter: Median filter is a type of non-linear filter. It used to reduce the amount of intensity variation between one pixel and the other pixel.
+Median Filter: Median filter is a type of non-linear filter. It used to reduce the measure of intensity variation between one pixel and the other pixel.
 
 \
 
 %\subsection*{CONCLUSION AND FUTURE SCOPE}
-In this paper, the main focus is on the denoising of the images. Techniques that are already using may not be able to find the best result so in the future they may find the techniques that provide optimum solution to the noise.
+ In this paper, the purpose is denoising of the images. Techniques that are already using may not be able to find the best result so in the future they may find the techniques that provide optimum solution to the noise.
 \vspace{1.5cm}
 
 \section{Impulse Noise Reduction
@@ -219,7 +218,7 @@ Additive Noise:
 
 \
 
-Additive noise is a major part of the noise of an image sensor. It means of the constant noise level in dark areas of the image.
+Additive noise is noise of an image sensor. It's meaning the constant noise in dark areas of the image.
 
 \
 
@@ -261,21 +260,20 @@ PROPOSED APPROACH
 
 Average Filter
 
-The idea of average filtering is simply to replace each pixel value in an image with the average value of its neighbors, including itself.
+The idea of average filtering is simply to replace each pixel value in an image with the average value of its area, including itself.
 
 \  
 
 Median Filter
 
-The median filter is a nonlinear digital filtering technique, often
-used to remove noise from an image or signal (speckle noise \&
-salt-pepper noise)
+The median filter is popular technique nonlinear in digital filtering.It removes noise from an image or signal (speckle noise \& salt-pepper noise).
+
 
 \ 
 
 Bilateral Filter
 
-The bilateral filter is a non-linear technique that can blur an image while taking strong edges, by means of a nonlinear combination of nearby image values.
+This is a non-linear technique which can blur an image while taking strong edges. Solve to by combine nonlinear means  with nearby image values. 
 
 \vspace{0.1cm}
 
@@ -285,4 +283,4 @@ The bilateral filter is a non-linear technique that can blur an image while taki
  Quality Measures of Einstein image
 \end{center}
 
- A modified bilateral filtering method is implemented in this paper, which can effectively removed both impulsive noise and additive noise. Moreover MSE and PSNR of this method is the best.
+ Bilateral filtering method is changed in this paper. It can removed 2 types of noise : impulsive noise and additive noise.

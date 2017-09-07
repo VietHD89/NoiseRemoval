@@ -1,15 +1,24 @@
+clear all
+close all
+clc
+%subplot(1,3,1);
+RGB = imread('pon5.png');
+I = rgb2gray(RGB);
+imshow(I)
+%title('Original Image');
 %Add noise
-subplot(2,2,1);
-I = imread('lena.tif');
-J = imnoise(I,'gaussian',0,0);
-imshow(J(100:256,1:256));
-title('Added Gaussian Noise');
-
+%subplot(1,3,2);
+J = imnoise(I,'gaussian',0.05);
+imshow(J);
+%title('Added Gaussian Noise');
 %Remove noise
-subplot(2,2,2);
-K = wiener2(J,[5 5]);
-D = imshow(K(100:256,1:256));
-title('Noise Removed by Wiener Filter');
-
-%MSE
-MSE = myMSE(D,I);
+%subplot(1,3,3);
+K = wiener2(J,[7 7]);
+imshow(K);
+%title('Denoise by Wiener Filter');
+%MSE & PSNR
+MSE = myMSE(K,I);
+PSNR = 10 * log10( 255^2 / MSE);
+%%%%
+MSE1 = myMSE(K,J);
+PSNR1 = 10 * log10( 255^2 / MSE1);

@@ -31,155 +31,281 @@ The PSNR is also one of quality evaluation method. In this internship, it help u
 	
 \end{center}
 \newpage
-\section*{Lena Image}
+
+
+\section*{Construction Image}
 \begin{center}
+\begin{figure}[h]
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{construction-1.png}
+                \caption{Original 1}
+                \label{fig:original 1}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{construction2.png}
+                \caption{Original 2}
+                \label{fig:original 2}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{construction3.png}
+                 \caption{Original 3}
+                  \label{fig:original 3}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{construction4.png}
+                 \caption{Original 4}
+                  \label{fig:original 4}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.18\textwidth}
+                        \includegraphics[width=\linewidth]{construction5.png}
+                         \caption{Original 5}
+                          \label{fig:original 5}
+                \end{subfigure}
+      \end{figure}
+	
+\end{center}
+\vspace{2cm}
 
-\includegraphics{lena.png}
-
-
-
-\vspace{1cm}	
-Lena.tif 
-
-\begin{tabular}{|c|c|c|}
-	\hline 
-	Filter & MSE & PSNR \\ 
-	\hline 
-	Median & 0.0372 & 62.4258 \\ 
-	\hline 
-	Average & 0.0184 & 65.4860 \\ 
-	\hline 
-	Gaussian & 0.0041 & 72.0197 \\ 
-	\hline 
-	Weiner & 0.0366 & 62.4964 \\ 
-	\hline 
-	%SURE-LET & 3.22 & 43.05 \\ 
-%	\hline 
-\end{tabular} 
+%begin{table}[]
+%\centering
+%\caption{My caption}
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|l|}{}            & \multicolumn{2}{l|}{Median}  & \multicolumn{2}{l|}{Average} & \multicolumn{2}{l|}{Gaussian} & \multicolumn{2}{l|}{Wiener}  \\ \hline
+\multirow{4}{*}{Image 1} & MSE    & \multicolumn{2}{l|}{0.0097}  & \multicolumn{2}{l|}{0.022}   & \multicolumn{2}{l|}{0.0095}   & \multicolumn{2}{l|}{0.007}   \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{68.269}  & \multicolumn{2}{l|}{64.7115} & \multicolumn{2}{l|}{68.3762}  & \multicolumn{2}{l|}{69.6511} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0125}  & \multicolumn{2}{l|}{0.0251}  & \multicolumn{2}{l|}{0.012}    & \multicolumn{2}{l|}{0.0084}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{67.1535} & \multicolumn{2}{l|}{64.1264} & \multicolumn{2}{l|}{67.3409}  & \multicolumn{2}{l|}{68.8738} \\ \hline
+\multirow{4}{*}{Image 2} & MSE    & \multicolumn{2}{l|}{0.0055}  & \multicolumn{2}{l|}{0.0166}  & \multicolumn{2}{l|}{0.0056}   & \multicolumn{2}{l|}{0.0044}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{70.7071} & \multicolumn{2}{l|}{65.9348} & \multicolumn{2}{l|}{70.6237}  & \multicolumn{2}{l|}{71.654}  \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0096}  & \multicolumn{2}{l|}{0.0219}  & \multicolumn{2}{l|}{0.0096}   & \multicolumn{2}{l|}{0.0075}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{68.298}  & \multicolumn{2}{l|}{64.7271} & \multicolumn{2}{l|}{68.2967}  & \multicolumn{2}{l|}{69.3898} \\ \hline
+\multirow{4}{*}{Image 3} & MSE    & \multicolumn{2}{l|}{0.0034}  & \multicolumn{2}{l|}{0.0122}  & \multicolumn{2}{l|}{0.0035}   & \multicolumn{2}{l|}{0.0028}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{72.761}  & \multicolumn{2}{l|}{67.2713} & \multicolumn{2}{l|}{72.6781}  & \multicolumn{2}{l|}{73.6324} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0078}  & \multicolumn{2}{l|}{0.0178}  & \multicolumn{2}{l|}{0.0077}   & \multicolumn{2}{l|}{0.0061}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{69.2093} & \multicolumn{2}{l|}{65.638}  & \multicolumn{2}{l|}{69.2572}  & \multicolumn{2}{l|}{70.2559} \\ \hline
+\multirow{4}{*}{Image 4} & MSE    & \multicolumn{2}{l|}{0.0026}  & \multicolumn{2}{l|}{0.0144}  & \multicolumn{2}{l|}{0.0031}   & \multicolumn{2}{l|}{0.0022}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{73.9221} & \multicolumn{2}{l|}{66.5571} & \multicolumn{2}{l|}{73.1714}  & \multicolumn{2}{l|}{74.65}   \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0065}  & \multicolumn{2}{l|}{0.0183}  & \multicolumn{2}{l|}{0.0067}   & \multicolumn{2}{l|}{0.0054}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{69.9904} & \multicolumn{2}{l|}{65.5003} & \multicolumn{2}{l|}{69.8929}  & \multicolumn{2}{l|}{70.8107} \\ \hline
+\multirow{4}{*}{Image 5} & MSE    & \multicolumn{2}{l|}{0.0048}  & \multicolumn{2}{l|}{0.0243}  & \multicolumn{2}{l|}{0.0056}   & \multicolumn{2}{l|}{0.0046}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{71.3083} & \multicolumn{2}{l|}{64.2764} & \multicolumn{2}{l|}{70.6356}  & \multicolumn{2}{l|}{71.5275} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0125}  & \multicolumn{2}{l|}{0.0351}  & \multicolumn{2}{l|}{0.0131}   & \multicolumn{2}{l|}{0.0098}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{67.1789} & \multicolumn{2}{l|}{62.6729} & \multicolumn{2}{l|}{66.9615}  & \multicolumn{2}{l|}{68.2047} \\ \hline
+\end{tabular}
 
 \
 
 Comparison Table
 \end{center}
-\vspace{3cm}
 
-\section*{Cameraman Image}
+
+
+
+
+
+
+
+
+
+\newpage
+\section*{Rubbish Image}
 \begin{center}
-\includegraphics{cameraman.png}
+\begin{figure}[h]
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{rubbish1.png}
+                \caption{Original 1}
+                \label{fig:original 1}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{rubbish2.png}
+                \caption{Original 2}
+                \label{fig:original 2}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{rubbish3.png}
+                 \caption{Original 3}
+                  \label{fig:original 3}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{rubbish4.png}
+                 \caption{Original 4}
+                  \label{fig:original 4}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.18\textwidth}
+                        \includegraphics[width=\linewidth]{rubbish5.png}
+                         \caption{Original 5}
+                          \label{fig:original 5}
+                \end{subfigure}
+      \end{figure}
+	\end{center}
+\vspace{2cm}
 
-\vspace{1cm}	
-	Cameraman.tif
-	
-	\begin{tabular}{|c|c|c|}
-		\hline 
-		Filter & MSE & PSNR \\ 
-		\hline 
-		Median & 0.1060 & 57.8789 \\ 
-		\hline 
-		Average & 0.0145 & 66.5120 \\ 
-		\hline 
-		Gaussian & 0.0059 & 70.3933 \\ 
-		\hline 
-		Weiner & 0.1148 & 57.5314 \\ 
-		\hline 
-		%SURE-LET & 3.22 & 43.05 \\ 
-		%\hline 
-	\end{tabular} 
+\begin{center}
+
+
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|l|}{}            & \multicolumn{2}{l|}{Median}  & \multicolumn{2}{l|}{Average} & \multicolumn{2}{l|}{Gaussian} & \multicolumn{2}{l|}{Wiener}  \\ \hline
+\multirow{4}{*}{Image 1} & MSE    & \multicolumn{2}{l|}{0.0032}  & \multicolumn{2}{l|}{0.0156}  & \multicolumn{2}{l|}{0.0036}   & \multicolumn{2}{l|}{0.0025}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{73.1106} & \multicolumn{2}{l|}{66.1969} & \multicolumn{2}{l|}{72.5825}  & \multicolumn{2}{l|}{74.1694} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.007}   & \multicolumn{2}{l|}{0.0198}  & \multicolumn{2}{l|}{0.007}    & \multicolumn{2}{l|}{0.0053}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{69.6741} & \multicolumn{2}{l|}{65.1589} & \multicolumn{2}{l|}{69.6536}  & \multicolumn{2}{l|}{70.8804} \\ \hline
+\multirow{4}{*}{Image 2} & MSE    & \multicolumn{2}{l|}{0.0036}  & \multicolumn{2}{l|}{0.00126} & \multicolumn{2}{l|}{0.0038}   & \multicolumn{2}{l|}{0.0029}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{72.5146} & \multicolumn{2}{l|}{67.1263} & \multicolumn{2}{l|}{72.3851}  & \multicolumn{2}{l|}{73.4524} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0078}  & \multicolumn{2}{l|}{0.0173}  & \multicolumn{2}{l|}{0.0076}   & \multicolumn{2}{l|}{0.0061}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{69.2119} & \multicolumn{2}{l|}{65.7582} & \multicolumn{2}{l|}{69.3064}  & \multicolumn{2}{l|}{70.2561} \\ \hline
+\multirow{4}{*}{Image 3} & MSE    & \multicolumn{2}{l|}{0.0083}  & \multicolumn{2}{l|}{0.0246}  & \multicolumn{2}{l|}{0.0081}   & \multicolumn{2}{l|}{0.0063}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{68.9656} & \multicolumn{2}{l|}{64.2139} & \multicolumn{2}{l|}{69.0718}  & \multicolumn{2}{l|}{70.1636} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0158}  & \multicolumn{2}{l|}{0.0336}  & \multicolumn{2}{l|}{0.015}    & \multicolumn{2}{l|}{0.0115}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{66.1394} & \multicolumn{2}{l|}{62.8625} & \multicolumn{2}{l|}{66.3823}  & \multicolumn{2}{l|}{67.5195} \\ \hline
+\multirow{4}{*}{Image 4} & MSE    & \multicolumn{2}{l|}{0.0207}  & \multicolumn{2}{l|}{0.0424}  & \multicolumn{2}{l|}{0.0185}   & \multicolumn{2}{l|}{0.0161}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{64.9661} & \multicolumn{2}{l|}{61.8601} & \multicolumn{2}{l|}{65.4527}  & \multicolumn{2}{l|}{66.0756} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0313}  & \multicolumn{2}{l|}{0.0567}  & \multicolumn{2}{l|}{0.0287}   & \multicolumn{2}{l|}{0.0235}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{63.1696} & \multicolumn{2}{l|}{60.5959} & \multicolumn{2}{l|}{63.5549}  & \multicolumn{2}{l|}{64.4181} \\ \hline
+\multirow{4}{*}{Image 5} & MSE    & \multicolumn{2}{l|}{0.0055}  & \multicolumn{2}{l|}{0.0123}  & \multicolumn{2}{l|}{0.0053}   & \multicolumn{2}{l|}{0.004}   \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{70.7050} & \multicolumn{2}{l|}{67.2474} & \multicolumn{2}{l|}{70.9133}  & \multicolumn{2}{l|}{72.0813} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0096}  & \multicolumn{2}{l|}{0.0176}  & \multicolumn{2}{l|}{0.0092}   & \multicolumn{2}{l|}{0.007}   \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{68.3119} & \multicolumn{2}{l|}{65.677}  & \multicolumn{2}{l|}{68.4872}  & \multicolumn{2}{l|}{69.698}  \\ \hline
+\end{tabular}
 	
 	\
 	
 	Comparison Table
 \end{center}
-\vspace{3cm}
 
-\section*{Coco Image}
+\newpage
+\section*{Pagoda Image}
 \begin{center}
-	\includegraphics{coco.png}
-	
-	\vspace{1cm}
-	Coco.tif
-	
-	\begin{tabular}{|c|c|c|}
-		\hline 
-		Filter & MSE & PSNR \\ 
-		\hline 
-		Median & 0.0684 & 59.7830 \\ 
-		\hline 
-		Average & 0.0096 & 68.3246 \\ 
-		\hline 
-		Gaussian & 0.0016 & 75.9843 \\ 
-		\hline 
-		Weiner & 0.0762 & 59.3135 \\ 
-		\hline 
-		%SURE-LET & 2.23 & 44.64 \\ 
-		%\hline 
-	\end{tabular} 
-	
-	\
-	
-	Comparison Table
+\begin{figure}[h]
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{pagoda1.png}
+                \caption{Original 1}
+                \label{fig:original 1}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{pagoda2.png}
+                \caption{Original 2}
+                \label{fig:original 2}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{pagoda3.png}
+                 \caption{Original 3}
+                  \label{fig:original 3}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{pagoda4.png}
+                 \caption{Original 4}
+                  \label{fig:original 4}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.18\textwidth}
+                        \includegraphics[width=\linewidth]{pagoda5.png}
+                         \caption{Original 5}
+                          \label{fig:original 5}
+                \end{subfigure}
+      \end{figure}
 \end{center}
-\vspace{3cm}
+\vspace{2cm}
 
-\section*{House Image}
 \begin{center}
-	\includegraphics{house.png}
-	
-	\vspace{1cm}
-	House.tif
-	
-	\begin{tabular}{|c|c|c|}
-		\hline 
-		Filter & MSE & PSNR \\ 
-		\hline 
-		Median & 0.0521 & 60.9607 \\ 
-		\hline 
-		Average & 0.0132 & 66.9250 \\ 
-		\hline 
-		Gaussian & 0.0027 & 73.7704 \\ 
-		\hline 
-		Weiner & 0.0580 & 60.4962 \\ 
-		\hline 
-	%	SURE-LET & 2.77 & 43.70 \\ 
-	%	\hline 
-	\end{tabular} 
-	
-	\
-	
-	Comparison Table
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|l|}{}            & \multicolumn{2}{l|}{Median}  & \multicolumn{2}{l|}{Average} & \multicolumn{2}{l|}{Gaussian} & \multicolumn{2}{l|}{Wiener}  \\ \hline
+\multirow{4}{*}{Image 1} & MSE    & \multicolumn{2}{l|}{0.0098}  & \multicolumn{2}{l|}{0.0141}  & \multicolumn{2}{l|}{0.0093}   & \multicolumn{2}{l|}{0.0055}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{68.2117} & \multicolumn{2}{l|}{66.6490} & \multicolumn{2}{l|}{68.4598}  & \multicolumn{2}{l|}{70.7544} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.013}   & \multicolumn{2}{l|}{0.0168}  & \multicolumn{2}{l|}{0.0115}   & \multicolumn{2}{l|}{0.0068}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{66.9999} & \multicolumn{2}{l|}{65.8739} & \multicolumn{2}{l|}{67.5091}  & \multicolumn{2}{l|}{69.7993} \\ \hline
+\multirow{4}{*}{Image 2} & MSE    & \multicolumn{2}{l|}{0.0098}  & \multicolumn{2}{l|}{0.0145}  & \multicolumn{2}{l|}{0.0088}   & \multicolumn{2}{l|}{0.0053}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{68.2338} & \multicolumn{2}{l|}{66.5220} & \multicolumn{2}{l|}{68.6970}  & \multicolumn{2}{l|}{70.9009} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0138}  & \multicolumn{2}{l|}{0.0189}  & \multicolumn{2}{l|}{0.0122}   & \multicolumn{2}{l|}{0.0076}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{66.7404} & \multicolumn{2}{l|}{65.3739} & \multicolumn{2}{l|}{67.2818}  & \multicolumn{2}{l|}{69.3011} \\ \hline
+\multirow{4}{*}{Image 3} & MSE    & \multicolumn{2}{l|}{0.0114}  & \multicolumn{2}{l|}{0.0177}  & \multicolumn{2}{l|}{0.0102}   & \multicolumn{2}{l|}{0.0065}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{67.5543} & \multicolumn{2}{l|}{65.6549} & \multicolumn{2}{l|}{68.0291}  & \multicolumn{2}{l|}{70.0034} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0150}  & \multicolumn{2}{l|}{0.0215}  & \multicolumn{2}{l|}{0.0131}   & \multicolumn{2}{l|}{0.0081}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{66.3743} & \multicolumn{2}{l|}{64.8131} & \multicolumn{2}{l|}{66.9631}  & \multicolumn{2}{l|}{69.0515} \\ \hline
+\multirow{4}{*}{Image 4} & MSE    & \multicolumn{2}{l|}{0.0080}  & \multicolumn{2}{l|}{0.0188}  & \multicolumn{2}{l|}{0.0072}   & \multicolumn{2}{l|}{0.0047}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{69.1060} & \multicolumn{2}{l|}{65.3952} & \multicolumn{2}{l|}{69.5399}  & \multicolumn{2}{l|}{71.4029} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0116}  & \multicolumn{2}{l|}{0.0229}  & \multicolumn{2}{l|}{0.0106}   & \multicolumn{2}{l|}{0.0069}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{67.4972} & \multicolumn{2}{l|}{64.5418} & \multicolumn{2}{l|}{67.8751}  & \multicolumn{2}{l|}{69.7300} \\ \hline
+\multirow{4}{*}{Image 5} & MSE    & \multicolumn{2}{l|}{0.0104}  & \multicolumn{2}{l|}{0.0179}  & \multicolumn{2}{l|}{0.0087}   & \multicolumn{2}{l|}{0.0062}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{67.9741} & \multicolumn{2}{l|}{65.6092} & \multicolumn{2}{l|}{68.7310}  & \multicolumn{2}{l|}{70.2064} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0141}  & \multicolumn{2}{l|}{0.0230}  & \multicolumn{2}{l|}{0.0125}   & \multicolumn{2}{l|}{0.0086}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{66.6335} & \multicolumn{2}{l|}{64.5060} & \multicolumn{2}{l|}{67.1643}  & \multicolumn{2}{l|}{68.8033} \\ \hline
+\end{tabular}
+
+\
+
+Comparison Table
 \end{center}
-\vspace{3cm}
 
-\section*{Peppers Image}
+
+\newpage
+\section*{Pond Image}
 \begin{center}
-\includegraphics{Peppers.png}	
-	
-	\vspace{1cm}
-	Peppers.tif
-	
-	\begin{tabular}{|c|c|c|}
-		\hline 
-		Filter & MSE & PSNR \\ 
-		\hline 
-		Median & 0.0827 & 58.9580 \\ 
-		\hline 
-		Average & 0.0105 & 67.9129 \\ 
-		\hline 
-		Gaussian & 0.0040 & 72.1321 \\ 
-		\hline 
-		Weiner & 0.0908 & 58.5492 \\ 
-		\hline 
-	%	SURE-LET & 3.17 & 43.13 \\ 
-	%	\hline 
-	\end{tabular} 
-	
-	\
-	
-	Comparison Table
+\begin{figure}[h]
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{pond1.png}
+                \caption{Original 1}
+                \label{fig:original 1}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{pond2.png}
+                \caption{Original 2}
+                \label{fig:original 2}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{pond3.png}
+                 \caption{Original 3}
+                  \label{fig:original 3}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.18\textwidth}
+                \includegraphics[width=\linewidth]{pond4.png}
+                 \caption{Original 4}
+                  \label{fig:original 4}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.18\textwidth}
+                        \includegraphics[width=\linewidth]{pond5.png}
+                         \caption{Original 5}
+                          \label{fig:original 5}
+                \end{subfigure}
+      \end{figure}
+\end{center}
+\vspace{2cm}
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|l|}{}            & \multicolumn{2}{l|}{Median}  & \multicolumn{2}{l|}{Average} & \multicolumn{2}{l|}{Gaussian} & \multicolumn{2}{l|}{Wiener}  \\ \hline
+\multirow{4}{*}{Image 1} & MSE    & \multicolumn{2}{l|}{0.0071}  & \multicolumn{2}{l|}{0.0267}  & \multicolumn{2}{l|}{0.0071}   & \multicolumn{2}{l|}{0.0057}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{69.6156} & \multicolumn{2}{l|}{63.8625} & \multicolumn{2}{l|}{69.6193}  & \multicolumn{2}{l|}{70.5647} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0151}  & \multicolumn{2}{l|}{0.0374}  & \multicolumn{2}{l|}{0.0148}   & \multicolumn{2}{l|}{0.0116}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{66.3488} & \multicolumn{2}{l|}{62.4067} & \multicolumn{2}{l|}{66.4381}  & \multicolumn{2}{l|}{69.5}    \\ \hline
+\multirow{4}{*}{Image 2} & MSE    & \multicolumn{2}{l|}{0.0049}  & \multicolumn{2}{l|}{0.0118}  & \multicolumn{2}{l|}{0.0049}   & \multicolumn{2}{l|}{0.0037}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{71.1950} & \multicolumn{2}{l|}{67.4075} & \multicolumn{2}{l|}{71.1985}  & \multicolumn{2}{l|}{72.4594} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.009}   & \multicolumn{2}{l|}{0.0161}  & \multicolumn{2}{l|}{0.087}    & \multicolumn{2}{l|}{0.0066}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{68.5651} & \multicolumn{2}{l|}{66.0539} & \multicolumn{2}{l|}{68.7473}  & \multicolumn{2}{l|}{69.9595} \\ \hline
+\multirow{4}{*}{Image 3} & MSE    & \multicolumn{2}{l|}{0.0063}  & \multicolumn{2}{l|}{0.0136}  & \multicolumn{2}{l|}{0.0059}   & \multicolumn{2}{l|}{0.0045}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{70.1294} & \multicolumn{2}{l|}{66.7905} & \multicolumn{2}{l|}{70.4278}  & \multicolumn{2}{l|}{71.5971} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0103}  & \multicolumn{2}{l|}{0.0181}  & \multicolumn{2}{l|}{0.0095}   & \multicolumn{2}{l|}{0.0071}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{68.0057} & \multicolumn{2}{l|}{65.5457} & \multicolumn{2}{l|}{68.3309}  & \multicolumn{2}{l|}{69.5910} \\ \hline
+\multirow{4}{*}{Image 4} & MSE    & \multicolumn{2}{l|}{0.0044}  & \multicolumn{2}{l|}{0.0103}  & \multicolumn{2}{l|}{0.0045}   & \multicolumn{2}{l|}{0.0034}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{71.7345} & \multicolumn{2}{l|}{67.9993} & \multicolumn{2}{l|}{71.5601}  & \multicolumn{2}{l|}{72.7996} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0085}  & \multicolumn{2}{l|}{0.0148}  & \multicolumn{2}{l|}{0.0082}   & \multicolumn{2}{l|}{0.0062}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{68.8176} & \multicolumn{2}{l|}{66.4207} & \multicolumn{2}{l|}{68.9979}  & \multicolumn{2}{l|}{70.1919} \\ \hline
+\multirow{4}{*}{Image 5} & MSE    & \multicolumn{2}{l|}{0.0076}  & \multicolumn{2}{l|}{0.0149}  & \multicolumn{2}{l|}{0.0065}   & \multicolumn{2}{l|}{0.0044}  \\ \cline{2-10} 
+                         & PSNR   & \multicolumn{2}{l|}{69.3244} & \multicolumn{2}{l|}{66.4011} & \multicolumn{2}{l|}{70.0243}  & \multicolumn{2}{l|}{71.7026} \\ \cline{2-10} 
+                         & MSE 1  & \multicolumn{2}{l|}{0.0111}  & \multicolumn{2}{l|}{0.0191}  & \multicolumn{2}{l|}{0.0098}   & \multicolumn{2}{l|}{0.0068}  \\ \cline{2-10} 
+                         & PSNR 1 & \multicolumn{2}{l|}{67.6856} & \multicolumn{2}{l|}{65.3228} & \multicolumn{2}{l|}{68.2256}  & \multicolumn{2}{l|}{69.7923} \\ \hline
+\end{tabular}
+
+\
+
+Comparison Table
 \end{center}
 \vspace{1cm}
 
-Normally paper in the chapter 2 as we see, they usually use PSNR or MSE to quality comparison of image after denoise. But in this report, we used 2 methods to obtain best result and showed best noise removal method. With 5 images above, value comparison by MSE and PSNR. We have best of results Gaussian filter with MSE is minimum mean square error and it is maximum PSNR.
+Normally paper in the chapter 2 as we see, they usually use PSNR or MSE to quality comparison of image after denoise. But in this report, we used 2 methods to obtain best result and showed best noise removal method. With 4 images class, value comparison by MSE and PSNR.Moreover, we used MSE 1 and PSNR 1 to evaluate 4 method which remove noise in this report. MSE 1 and PSNR1 were created by image add gaussian noise and original. According comparison table,  MSE 1 is bigger than MSE and PSNR 1 is smaller than PSNR . From this, we conclusion 4 method to remove noise is correct. We have best of results Wiener filter with MSE is minimum mean square error and it is maximum PSNR.
 
 
 %This part must contain the result of the method/algoritm/system developed during the internship. \\

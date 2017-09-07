@@ -26,24 +26,18 @@
 
 Moreover, noise also appears in the images. Image noise is created by the sensor and
 circuitry from scanner or digital camera. Film grain and noise of an ideal photon detector
-are one of cause. So brightness or color information in images will be changed. Image
-noise is unlike by product of image capture that have many different information.
+are one of cause. So brightness or color information in images will be changed. Image noise is not same as normal image that have many different information.
 
 \
 
 Although camera technology is very improve over the past
 decade, it still has not totally remove noise for images. So now, researchers still find to
 way which improve about camera to have better images is better. Noise can appear in our
-photo for different reasons. Noise signal increases with the light signal when high ISO is
-used, therefore our camera will capture more light to illuminate the scene, but graininess
-will be more apparent. When an image sensor heats up, photons separate from
-the images and destroy other images. Long exposures also give our image greater risk of
-showing image noise, since the sensor is left open to gather more image data and this
-includes electrical noise.
+photo for different reasons. Noise signal with the light signal increase when high ISO is used.  Camera need lighter to creat good image, but noise also more appear. When the image sensor is hot, photons evacuate from the images and damage other images. Long exposures is one of cause to appear noise in image becaue the sensor open to have more image information and electrical noise will appear.
 
 \
 
-Denoise is a process of remove noise to images. There are ways to noise removal in image, data. With image denoise model is completely remove noise and protect edges. Basically, there are two types of models : linear and non-liner. Good feature of linear noise removing models is the speed also as limitations of itself. It's not able to protect edges which are recognized as discontinuities in the image. So, blur edges could appear in images.
+Denoise is a process of remove noise to images. There are ways to noise removal in image, data. With image denoise model is completely remove noise and protect edges. Basically, there are two types of models : linear and non-liner. Linear models is removing models is the speed also as limitations of itself. It’s not able to protect edges which are recognized as discontinuities in the image. It's not able to protect edges which are recognized as discontinuities in the image. So, blur edges could appear in images.
 
 \
 
@@ -61,7 +55,7 @@ On the other hand, non-linear models can solve edges problem much better than li
 %\vspace*{1cm}
 
 \subsection{Internship context}
-One of the major problems in document digitalization is noise. Image noise is random (not present in the object imaged) variation of brightness or color information in images. It can be generated in many scanning steps, such as grayscaling or thresholding. It can also be caused by image lossy compression algorithms, such as JPEG’s discrete cosine transformation and thresholding. Noise is one of the main factors contributing to degratation of accuracy in optical character recognition of the scanned documents, a process aiming at providing a high semantic description of the content of the document. At ICTLab, we have been dealing with scanned document in the context of project ARCHIVES. A good noise evaluation and reduction algorithm will improve our document analysis (including optical character recognition) results. We are going to survey different denoising methods. From this, we will compare result of methods as : Median filter, Average filter, Gaussian filter, Wiener filter by we are using PSNR and MSE. Based on the quality characteristics of two methods MSE \& PSNR to compare. Created comparison table and showed image result, finally we will know method is the best. Although, images processing has many method to remove noise but due to limited time, many other methods can not be explored and the results are only relative.
+One of the major problems in document digitalization is noise. Image noise is random (not present in the object imaged) when it change brightness level or color in images. It can be generated in many scanning steps, such as grayscaling or thresholding. It can also be caused by image lossy compression algorithms, such as JPEG’s discrete cosine transformation and thresholding. Noise is one of the main factors contributing to degratation of accuracy in optical character recognition of the scanned documents, a process aiming at providing a high semantic description of the content of the document. At ICTLab, we have been dealing with scanned document in the context of project ARCHIVES. A good noise evaluation and reduction algorithm will improve our document analysis (including optical character recognition) results. We are going to survey different denoising methods. From this, we will compare result of methods as : Median filter, Average filter, Gaussian filter, Wiener filter by we are using PSNR and MSE. Based on the quality characteristics of two methods MSE \& PSNR to compare. Created comparison table and showed image result, finally we will know method is the best. Although, images processing has many method to remove noise but due to limited time, many other methods can not be explored and the results are only relative.
 
 
 \vspace*{1cm}
@@ -72,20 +66,20 @@ One of the major problems in document digitalization is noise. Image noise is ra
 We have two problems in this topic:
 
 
+
+
+
+\subsection*{Noise}
 \begin{itemize}
-
-
-\item \subsection*{Noises}
-\textbf{Noise} is the cause of errors from image when in pixel values
+\item Noise is the cause of errors from image when in pixel values
 that do not reflect the true intensities of the real scene.
+
+\item ISO values: a standard of absolute sensitivity to light.
+\end{itemize}
 \vspace{0.3cm}
 
-\textbf{ISO values:} a standard of absolute sensitivity to light.
+\textbf{There are 3 type of noise:}
 \vspace{0.3cm}
-
-There are 3 type of noise:
-%\begin{itemize}
-%\item Fixed Pattern 
 
 Fixed pattern noise appears during long exposures. When the camera is working for long periods of time and it heats up, the sensor starts to produce these strange dots of color in our image. Our camera is hotter, more fixed pattern noise will appear. Fixed pattern noise usually easier to remove since it is repeatable. A camera just has to know the pattern and it can remove fixed pattern.
 \vspace{0.5cm}
@@ -104,8 +98,7 @@ Low ISO Speed
 
 Random noise may be the most common image noise. Random noise appears whenever we are using high ISO
 values. ISO has mean is a standard which describes its absolute sensitivity to light. 
-Cameras are good at reducing the amount of random noise seen in photographs through technology. Example: Neat Image and Noise Ninja programs, they can be reducing noise while still retaining actual image information. 
-When technology continues to
+Quality of camera is good when it remove random noise through software. Example: Neat Image and Noise Ninja programs, they can be removing noise and protect image information. When technology continues to
 improve, we can shoot in low light situation.
 
 \begin{center}
@@ -134,46 +127,39 @@ Susceptible Camera
 Brightened Shadows
 \end{center}
 
-\end{itemize}
+%\end{itemize}
 
 \subsection*{Denoise}
 
 Noise removal is very important task in image processing. It will help to remove the noise from the image and rebuild to original image is the best quality. In modern digital image processing, data denoising is a hard problem and it used to application areas. Noise removal is popular solution for photography or improve the image was degraded.
 
-%\
+\
 
-%Filtering is technique which can be decreasing or increasing an image. It’s the processed value for the
-%current pixel which depends on both itself and surrounding pixels. So filtering is a neighborhood operation,
-%it mean that the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel. A pixel’s neighborhood is
-%some set of pixels, defined by their locations relative to that pixel.
+Filtering is technique which can be decreasing or increasing an image.It's processed value for current pixel will depends itself and surrounding pixels . The value of any pixel in the output image is used by applying  algorithms to the values of the pixels in the place which corresponding input pixel.
 
-%\
+\
 
-%Follow Image Processing, there are 4 type of filtering :
+Follow Image Processing, there are 4 types of filtering :
 
-%\begin{itemize}
-%\item Median Filter.
+\begin{itemize}
+\item Median Filter.
 
-%The median filter is a nonlinear digital filtering technique. So median filtering is very widely used in
-%image processing and it preserves edges while removing noise under certain conditions.
-%\item Average Filter.
+The median filter method is very popular in image processing and it protects edges while removing noise in certain environment
+\item Average Filter.
 
-%The type of average filtering is simply to replace each pixel value in an image with the average value of its neighbors, including itself. This has the effect of eliminating pixel values which are unrepresentative
-%of their environment. Average filtering as a convolution filter.
-%\item Gaussian Filter.
+Average filtering is simply to replace each pixel value in an image with the average value of its area, including itself. Its meaning is remove pixel values which aren't types of their environment.
 
-%In electronics and signal processing, filter whose impulse response is a Gaussian function (or an approximation
-%to it). Gaussian filters have feature of having no overshoot to a step function input while
-%minimizing the rise and fall time.
+\item Gaussian Filter.
+
+Gaussian filters never go through to function input while minimizing the time.
+
  
-%\item Wiener Filter
+\item Wiener Filter
 
-%The main aim of this technique is to filter out noise that has corrupted the signal. It is kind of statistical
-%approach. For the designing of this filter one should know the spectral properties of the original signal
-%,the noise and linear time-variant filter whose output should be as close as to the original as possible.
-%The Wiener filter minimizes the mean square error between the estimated random process and the
-%desired process.
-%\end{itemize}
+The Wiener filter decreases the mean square error between the random process and the desired process.
+
+
+\end{itemize} 
 %\end{itemize}
 
 %\vspace*{1cm}
