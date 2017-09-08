@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.7.20)  7 SEP 2017 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.7.20)  9 SEP 2017 01:51
 entering extended mode
 **Report.tex
 (Report.tex
@@ -581,11 +581,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<signature.jpg, id=12, 71.26625pt x 32.12pt>
-File: signature.jpg Graphic file (type jpg)
- <use signature.jpg>
-Package pdftex.def Info: signature.jpg used on input line 29.
-(pdftex.def)             Requested size: 71.26605pt x 32.1199pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 36--41
 
@@ -615,7 +610,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--41
 
 
 
- <./signature.jpg>] (Acknowledgements.tex) [1
+] (Acknowledgements.tex) [1
 
 
 
@@ -623,13 +618,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--41
 
 
 
-]
-(Report.toc)
+] (Report.toc)
 \tf@toc=\write4
  [1
 
 
-] (Introduction.tex
+]
+(Introduction.tex
 Chapter 1.
 [2
 
@@ -642,13 +637,13 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
 
-<fix.png, id=34, 108.405pt x 108.405pt>
+<fix.png, id=33, 108.405pt x 108.405pt>
 File: fix.png Graphic file (type png)
  <use fix.png>
 Package pdftex.def Info: fix.png used on input line 88.
 (pdftex.def)             Requested size: 108.40472pt x 108.40472pt.
 
-<random.png, id=35, 108.405pt x 108.405pt>
+<random.png, id=34, 108.405pt x 108.405pt>
 File: random.png Graphic file (type png)
  <use random.png>
 Package pdftex.def Info: random.png used on input line 105.
@@ -656,7 +651,7 @@ Package pdftex.def Info: random.png used on input line 105.
 
 Underfull \vbox (badness 1221) has occurred while \output is active []
 
- [3 <./fix.png>] <banding.png, id=41, 108.405pt x 108.405pt>
+ [3 <./fix.png>] <banding.png, id=40, 108.405pt x 108.405pt>
 File: banding.png Graphic file (type png)
  <use banding.png>
 Package pdftex.def Info: banding.png used on input line 123.
@@ -671,13 +666,13 @@ Underfull \vbox (badness 2689) has occurred while \output is active []
 
 
 ]
-<surelet1.png, id=51, 376.40625pt x 121.95563pt>
+<surelet1.png, id=50, 376.40625pt x 121.95563pt>
 File: surelet1.png Graphic file (type png)
  <use surelet1.png>
 Package pdftex.def Info: surelet1.png used on input line 70.
 (pdftex.def)             Requested size: 376.40532pt x 121.9553pt.
 
-<gray.png, id=52, 395.22656pt x 185.94469pt>
+<gray.png, id=51, 395.22656pt x 185.94469pt>
 File: gray.png Graphic file (type png)
  <use gray.png>
 Package pdftex.def Info: gray.png used on input line 99.
@@ -685,12 +680,12 @@ Package pdftex.def Info: gray.png used on input line 99.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./surelet1.png>] <wave.png, id=56, 377.91188pt x 184.43906pt>
+ [7 <./surelet1.png>] <wave.png, id=55, 377.91188pt x 184.43906pt>
 File: wave.png Graphic file (type png)
  <use wave.png>
 Package pdftex.def Info: wave.png used on input line 109.
 (pdftex.def)             Requested size: 377.91095pt x 184.4386pt.
- [8 <./gray.png> <./wave.png>] [9] [10] <10.png, id=67, 300.3722pt x 82.80937pt
+ [8 <./gray.png> <./wave.png>] [9] [10] <10.png, id=66, 300.3722pt x 82.80937pt
 >
 File: 10.png Graphic file (type png)
 
@@ -699,13 +694,13 @@ Package pdftex.def Info: 10.png used on input line 281.
 (pdftex.def)             Requested size: 300.37144pt x 82.80916pt.
 ) [11 <./10.png>] (Contribution.tex
 Chapter 3.
-<construction.png, id=71, 210.7875pt x 217.5628pt>
+<construction.png, id=70, 210.7875pt x 217.5628pt>
 File: construction.png Graphic file (type png)
  <use construction.png>
 Package pdftex.def Info: construction.png used on input line 13.
 (pdftex.def)             Requested size: 210.78699pt x 217.56227pt.
 
-<noisec.png, id=72, 210.7875pt x 218.31563pt>
+<noisec.png, id=71, 210.7875pt x 218.31563pt>
 File: noisec.png Graphic file (type png)
  <use noisec.png>
 Package pdftex.def Info: noisec.png used on input line 17.
@@ -718,84 +713,84 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
  <./construction.png>] [13 <./noisec.png>]
-<medianc3.png, id=83, 210.7875pt x 217.5628pt>
+<medianc3.png, id=82, 210.7875pt x 217.5628pt>
 File: medianc3.png Graphic file (type png)
  <use medianc3.png>
-Package pdftex.def Info: medianc3.png used on input line 62.
+Package pdftex.def Info: medianc3.png used on input line 65.
 (pdftex.def)             Requested size: 210.78699pt x 217.56227pt.
 
-<medianc5.png, id=84, 210.7875pt x 217.5628pt>
+<medianc5.png, id=83, 210.7875pt x 217.5628pt>
 File: medianc5.png Graphic file (type png)
  <use medianc5.png>
-Package pdftex.def Info: medianc5.png used on input line 68.
+Package pdftex.def Info: medianc5.png used on input line 71.
 (pdftex.def)             Requested size: 210.78699pt x 217.56227pt.
- [14 <./medianc3.png> <./medianc5.png>] <medianc7.png, id=90, 210.7875pt x 217.
+ [14 <./medianc3.png> <./medianc5.png>] <medianc7.png, id=89, 210.7875pt x 217.
 5628pt>
 File: medianc7.png Graphic file (type png)
 
 <use medianc7.png>
-Package pdftex.def Info: medianc7.png used on input line 76.
+Package pdftex.def Info: medianc7.png used on input line 79.
 (pdftex.def)             Requested size: 210.78699pt x 217.56227pt.
  [15 <./medianc7.png>]
-<avec3.png, id=96, 210.7875pt x 217.5628pt>
+<avec3.png, id=95, 210.7875pt x 217.5628pt>
 File: avec3.png Graphic file (type png)
  <use avec3.png>
-Package pdftex.def Info: avec3.png used on input line 155.
+Package pdftex.def Info: avec3.png used on input line 158.
 (pdftex.def)             Requested size: 210.78699pt x 217.56227pt.
 
-<avec5.png, id=97, 210.7875pt x 217.5628pt>
+<avec5.png, id=96, 210.7875pt x 217.5628pt>
 File: avec5.png Graphic file (type png)
  <use avec5.png>
-Package pdftex.def Info: avec5.png used on input line 159.
+Package pdftex.def Info: avec5.png used on input line 162.
 (pdftex.def)             Requested size: 210.78699pt x 217.56227pt.
 
-<avec7.png, id=98, 210.7875pt x 217.5628pt>
+<avec7.png, id=97, 210.7875pt x 217.5628pt>
 File: avec7.png Graphic file (type png)
  <use avec7.png>
-Package pdftex.def Info: avec7.png used on input line 163.
+Package pdftex.def Info: avec7.png used on input line 166.
 (pdftex.def)             Requested size: 210.78699pt x 217.56227pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16 <./avec3.png> <./avec5.png>] [17 <./avec7.png>]
-<gauc3.png, id=110, 210.7875pt x 217.5628pt>
+<gauc3.png, id=109, 210.7875pt x 217.5628pt>
 File: gauc3.png Graphic file (type png)
  <use gauc3.png>
-Package pdftex.def Info: gauc3.png used on input line 241.
+Package pdftex.def Info: gauc3.png used on input line 246.
 (pdftex.def)             Requested size: 210.78699pt x 217.56227pt.
 
-<gauc5.png, id=111, 210.7875pt x 218.31563pt>
+<gauc5.png, id=110, 210.7875pt x 218.31563pt>
 File: gauc5.png Graphic file (type png)
  <use gauc5.png>
-Package pdftex.def Info: gauc5.png used on input line 245.
+Package pdftex.def Info: gauc5.png used on input line 250.
 (pdftex.def)             Requested size: 210.78699pt x 218.31508pt.
 
-<gauc7.png, id=112, 210.7875pt x 217.5628pt>
+<gauc7.png, id=111, 210.7875pt x 217.5628pt>
 File: gauc7.png Graphic file (type png)
  <use gauc7.png>
-Package pdftex.def Info: gauc7.png used on input line 249.
+Package pdftex.def Info: gauc7.png used on input line 254.
 (pdftex.def)             Requested size: 210.78699pt x 217.56227pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./gauc3.png> <./gauc5.png>] <Wienec3.png, id=118, 225.84375pt x 169.38281
+ [18 <./gauc3.png> <./gauc5.png>] <Wienec3.png, id=117, 225.84375pt x 169.38281
 pt>
 File: Wienec3.png Graphic file (type png)
 
 <use Wienec3.png>
-Package pdftex.def Info: Wienec3.png used on input line 260.
+Package pdftex.def Info: Wienec3.png used on input line 265.
 (pdftex.def)             Requested size: 225.84319pt x 169.38239pt.
- <Wienec5.png, id=119, 225.84375pt x 169.38281pt>
+ <Wienec5.png, id=118, 225.84375pt x 169.38281pt>
 File: Wienec5.png Graphic file (type png)
 
 <use Wienec5.png>
-Package pdftex.def Info: Wienec5.png used on input line 264.
+Package pdftex.def Info: Wienec5.png used on input line 269.
 (pdftex.def)             Requested size: 225.84319pt x 169.38239pt.
- <Wienec7.png, id=120, 225.84375pt x 169.38281pt>
+ <Wienec7.png, id=119, 225.84375pt x 169.38281pt>
 File: Wienec7.png Graphic file (type png)
 
 <use Wienec7.png>
-Package pdftex.def Info: Wienec7.png used on input line 268.
+Package pdftex.def Info: Wienec7.png used on input line 273.
 (pdftex.def)             Requested size: 225.84319pt x 169.38239pt.
  [19 <./gauc7.png> <./Wienec3.png> <./Wienec5.png>]) [20 <./Wienec7.png>] (Resu
 lts.tex
@@ -804,32 +799,32 @@ Chapter 4.
 
 
 
-] <construction-1.png, id=135, 225.84375pt x 233.37187pt>
+] <construction-1.png, id=134, 225.84375pt x 233.37187pt>
 File: construction-1.png Graphic file (type png)
 
 <use construction-1.png>
 Package pdftex.def Info: construction-1.png used on input line 40.
 (pdftex.def)             Requested size: 89.62253pt x 92.60997pt.
 
-<construction2.png, id=136, 225.84375pt x 232.61906pt>
+<construction2.png, id=135, 225.84375pt x 232.61906pt>
 File: construction2.png Graphic file (type png)
  <use construction2.png>
 Package pdftex.def Info: construction2.png used on input line 45.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<construction3.png, id=137, 225.84375pt x 232.61906pt>
+<construction3.png, id=136, 225.84375pt x 232.61906pt>
 File: construction3.png Graphic file (type png)
  <use construction3.png>
 Package pdftex.def Info: construction3.png used on input line 50.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<construction4.png, id=138, 225.84375pt x 232.61906pt>
+<construction4.png, id=137, 225.84375pt x 232.61906pt>
 File: construction4.png Graphic file (type png)
  <use construction4.png>
 Package pdftex.def Info: construction4.png used on input line 55.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<construction5.png, id=139, 225.84375pt x 149.8097pt>
+<construction5.png, id=138, 225.84375pt x 149.8097pt>
 File: construction5.png Graphic file (type png)
  <use construction5.png>
 Package pdftex.def Info: construction5.png used on input line 60.
@@ -837,92 +832,92 @@ Package pdftex.def Info: construction5.png used on input line 60.
 
 [22 <./construction-1.png> <./construction2.png> <./construction3.png> <./const
 ruction4.png> <./construction5.png>]
-<rubbish1.png, id=149, 225.84375pt x 232.61906pt>
+<rubbish1.png, id=148, 225.84375pt x 232.61906pt>
 File: rubbish1.png Graphic file (type png)
  <use rubbish1.png>
 Package pdftex.def Info: rubbish1.png used on input line 117.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<rubbish2.png, id=150, 225.84375pt x 232.61906pt>
+<rubbish2.png, id=149, 225.84375pt x 232.61906pt>
 File: rubbish2.png Graphic file (type png)
  <use rubbish2.png>
 Package pdftex.def Info: rubbish2.png used on input line 122.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<rubbish3.png, id=151, 225.84375pt x 149.8097pt>
+<rubbish3.png, id=150, 225.84375pt x 149.8097pt>
 File: rubbish3.png Graphic file (type png)
  <use rubbish3.png>
 Package pdftex.def Info: rubbish3.png used on input line 127.
 (pdftex.def)             Requested size: 89.62253pt x 59.44962pt.
 
-<rubbish4.png, id=152, 225.84375pt x 122.70844pt>
+<rubbish4.png, id=151, 225.84375pt x 122.70844pt>
 File: rubbish4.png Graphic file (type png)
  <use rubbish4.png>
 Package pdftex.def Info: rubbish4.png used on input line 132.
 (pdftex.def)             Requested size: 89.62253pt x 48.69492pt.
 
-<rubbish5.png, id=153, 225.84375pt x 232.61906pt>
+<rubbish5.png, id=152, 225.84375pt x 232.61906pt>
 File: rubbish5.png Graphic file (type png)
  <use rubbish5.png>
 Package pdftex.def Info: rubbish5.png used on input line 137.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
  [23 <./rubbish1.png> <./rubbish2.png> <./rubbish3.png> <./rubbish4.png> <./rub
-bish5.png>] <pagoda1.png, id=162, 225.84375pt x 232.61906pt>
+bish5.png>] <pagoda1.png, id=161, 225.84375pt x 232.61906pt>
 File: pagoda1.png Graphic file (type png)
  <use pagoda1.png>
 Package pdftex.def Info: pagoda1.png used on input line 183.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<pagoda2.png, id=163, 225.84375pt x 232.61906pt>
+<pagoda2.png, id=162, 225.84375pt x 232.61906pt>
 File: pagoda2.png Graphic file (type png)
  <use pagoda2.png>
 Package pdftex.def Info: pagoda2.png used on input line 188.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<pagoda3.png, id=164, 225.84375pt x 232.61906pt>
+<pagoda3.png, id=163, 225.84375pt x 232.61906pt>
 File: pagoda3.png Graphic file (type png)
  <use pagoda3.png>
 Package pdftex.def Info: pagoda3.png used on input line 193.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<pagoda4.png, id=165, 225.84375pt x 232.61906pt>
+<pagoda4.png, id=164, 225.84375pt x 232.61906pt>
 File: pagoda4.png Graphic file (type png)
  <use pagoda4.png>
 Package pdftex.def Info: pagoda4.png used on input line 198.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<pagoda5.png, id=166, 225.84375pt x 232.61906pt>
+<pagoda5.png, id=165, 225.84375pt x 232.61906pt>
 File: pagoda5.png Graphic file (type png)
  <use pagoda5.png>
 Package pdftex.def Info: pagoda5.png used on input line 203.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
  [24 <./pagoda1.png> <./pagoda2.png> <./pagoda3.png> <./pagoda4.png> <./pagoda5
 .png>]
-<pond1.png, id=175, 225.84375pt x 149.8097pt>
+<pond1.png, id=174, 225.84375pt x 149.8097pt>
 File: pond1.png Graphic file (type png)
  <use pond1.png>
 Package pdftex.def Info: pond1.png used on input line 248.
 (pdftex.def)             Requested size: 89.62253pt x 59.44962pt.
 
-<pond2.png, id=176, 225.84375pt x 232.61906pt>
+<pond2.png, id=175, 225.84375pt x 232.61906pt>
 File: pond2.png Graphic file (type png)
  <use pond2.png>
 Package pdftex.def Info: pond2.png used on input line 253.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<pond3.png, id=177, 225.84375pt x 232.61906pt>
+<pond3.png, id=176, 225.84375pt x 232.61906pt>
 File: pond3.png Graphic file (type png)
  <use pond3.png>
 Package pdftex.def Info: pond3.png used on input line 258.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<pond4.png, id=178, 225.84375pt x 232.61906pt>
+<pond4.png, id=177, 225.84375pt x 232.61906pt>
 File: pond4.png Graphic file (type png)
  <use pond4.png>
 Package pdftex.def Info: pond4.png used on input line 263.
 (pdftex.def)             Requested size: 89.62253pt x 92.31122pt.
 
-<pond5.png, id=179, 225.84375pt x 232.61906pt>
+<pond5.png, id=178, 225.84375pt x 232.61906pt>
 File: pond5.png Graphic file (type png)
  <use pond5.png>
 Package pdftex.def Info: pond5.png used on input line 268.
@@ -935,7 +930,7 @@ Chapter 5.
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 70.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 72.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )) [27
@@ -949,10 +944,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5033 strings out of 493698
- 70730 string characters out of 3144412
- 156249 words of memory out of 3000000
- 8199 multiletter control sequences out of 15000+200000
+ 5027 strings out of 493698
+ 70642 string characters out of 3144412
+ 166249 words of memory out of 3000000
+ 8195 multiletter control sequences out of 15000+200000
  16550 words of font info for 39 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  36i,8n,40p,1388b,497s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -973,9 +968,9 @@ blic/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
 uper/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm
 2074.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1095.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Report.pdf (31 pages, 2637101 bytes).
+Output written on Report.pdf (31 pages, 2632528 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
+ 253 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 
