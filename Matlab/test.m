@@ -2,7 +2,7 @@ clear all
 close all
 clc
 %%%%%%%%%%%%%
-RGB = imread('pon4.png');
+RGB = imread('pag1.png');
 I = rgb2gray(RGB);
 imshow(I)
 %%%%%%%
@@ -10,15 +10,21 @@ imshow(I)
 J = imnoise(I,'gaussian',0.05);
 figure, imshow(J)
 %%%%%%%%%%%%%
+tic
 F = medfilt2(J, [7 7]);
 imshow(F)
+toc
 %%%%%%%
 %I = imread('cameraman.tif');
+tic
 F=average(J);
+toc
 %%%%%%
+tic
 G = fspecial('gaussian',[7 7],2);
 F = imfilter(J,G,'same');
 imshow(F) 
+toc
 %%%%%%
 %(original, denoised)
 MSE = myMSE(F,I);
