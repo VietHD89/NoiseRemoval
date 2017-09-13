@@ -108,7 +108,6 @@ Comparison Table
 
 
 
-
 \newpage
 \section*{Rubbish Image}
 \begin{center}
@@ -175,6 +174,7 @@ Comparison Table
 	Comparison Table
 \end{center}
 
+
 \newpage
 \section*{Pagoda Image}
 \begin{center}
@@ -240,6 +240,7 @@ Comparison Table
 \end{center}
 
 
+
 \newpage
 \section*{Pond Image}
 \begin{center}
@@ -303,19 +304,37 @@ Comparison Table
 
 Comparison Table
 \end{center}
+
+
+
+
+
+
+
+
+
 \vspace{1cm}
 
 Normally paper in the chapter 2 as we see, they usually use PSNR or MSE to quality comparison of image after denoise. But in this report, we used 2 methods to obtain best result and showed best noise removal method. With 4 images class, value comparison by MSE and PSNR. We have best of results Wiener filter with MSE is minimum mean square error and it is maximum PSNR.
+\newpage
+\section*{Times}
+\vspace{2cm}
+\begin{center}
 
+\begin{tabular}{|l|l|l|c|l|l|c|l|l|c|l|l|c|l|l|}
+\hline
+\multicolumn{3}{|c|}{TIMES (s)}      & \multicolumn{3}{l|}{Median Filter} & \multicolumn{3}{l|}{Average Filter}    & \multicolumn{3}{l|}{Gaussian Filter} & \multicolumn{3}{l|}{Wiener Filter}     \\ \hline
+\multicolumn{3}{|l|}{Construction 1} & \multicolumn{3}{c|}{0.118817}      & \multicolumn{3}{c|}{0.657805}          & \multicolumn{3}{c|}{0.146741}        & \multicolumn{3}{c|}{\textbf{1.009124}} \\ \hline
+\multicolumn{3}{|l|}{Rubbish 1}      & \multicolumn{3}{c|}{0.114224}      & \multicolumn{3}{c|}{0.644159}          & \multicolumn{3}{c|}{0.142288}        & \multicolumn{3}{c|}{\textbf{0.806580}} \\ \hline
+\multicolumn{3}{|l|}{Pagoda 1}       & \multicolumn{3}{c|}{0.111952}      & \multicolumn{3}{c|}{\textbf{0.660047}} & \multicolumn{3}{c|}{0.136072}        & \multicolumn{3}{c|}{0.510974}          \\ \hline
+\multicolumn{3}{|l|}{Pond 1}         & \multicolumn{3}{c|}{0.105771}      & \multicolumn{3}{c|}{0.427079}          & \multicolumn{3}{c|}{0.119497}        & \multicolumn{3}{c|}{\textbf{0.589959}} \\ \hline
+\end{tabular}
 
-%This part must contain the result of the method/algoritm/system developed during the internship. \\
+\
 
-%This part must also include comparisons with the state of the art.\\
-
-%Use tables, figures, graphics to illustrate your results. \\ 
-
-%Comment your results, and explain the context used to obtain these results.
-
-
+Times Table
+\end{center}
+ 
+Times table as above is showing time to run of each filter for 4 images class. We see that wiener filter has active time is the longest, only average filter has longer active time in pagoda image.
 
 
