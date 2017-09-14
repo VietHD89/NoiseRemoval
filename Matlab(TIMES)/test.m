@@ -10,6 +10,7 @@ I = rgb2gray(RGB);
 J = imnoise(I,'gaussian',0.05);
 %figure, imshow(J);
 %%%%%%%%%%%%%
+medfilt2(J, [7 7]);
 tic
 medfilt2(J, [7 7]);
 toc

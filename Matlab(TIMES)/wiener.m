@@ -14,6 +14,7 @@ J = imnoise(I,'gaussian',0.05);
 %title('Added Gaussian Noise');
 %Remove noise
 %subplot(1,3,3);
+K = wiener2(J,[7 7]);
 tic
 K = wiener2(J,[7 7]);
 toc
