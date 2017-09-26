@@ -43,8 +43,8 @@
 \begin{frame}{Introduction}
 
 %Denoising is considered as one of the major issues in image processing.
-The noise in an image can be due to camera sensors, atmospheric conditions or transmission through a medium. Denoising has its root in wide range of applications. %such as segmentation, recognition, classification etc.
-\vspace{1cm} 
+%The noise in an image can be due to camera sensors, atmospheric conditions or transmission through a medium. Denoising has its root in wide range of applications. %such as segmentation, recognition, classification etc.
+
 \begin{itemize}
   \item Problem
   
@@ -89,7 +89,9 @@ The noise in an image can be due to camera sensors, atmospheric conditions or tr
 
 \item Noise:
 
-Noise is the cause of errors from image when in pixel values that do not reflect the true intensities of the real scene.
+Noise is an unwanted component of the image which can
+be additive or multiplicative.
+%Noise is the cause of errors from image when in pixel values that do not reflect the true intensities of the real scene.
 
 \vspace{7mm}
 
@@ -175,7 +177,7 @@ Denoise is popular solution for photography or remove noise in images processing
 \end{frame}
 
 \subsection{Gaussian Noise}
-\begin{frame}{Gaussian Noise}
+\begin{frame}{Gaussian Noise(Amplifier Noise)}
 
 \vspace{1cm}
 \begin{center}
@@ -192,7 +194,7 @@ Denoise is popular solution for photography or remove noise in images processing
 \end{frame}
 
 \subsection{Quantization Noise}
-\begin{frame}{Quantization Noise}
+\begin{frame}{Quantization Noise(Uniform Noise)}
 
 \vspace{1cm}
 \begin{center}
@@ -206,7 +208,7 @@ Denoise is popular solution for photography or remove noise in images processing
 \end{center}
 \end{frame}
 \subsection{Speckle Noise}
-\begin{frame}{Speckle Noise}
+\begin{frame}{Speckle Noise(Multiplicative Noise)}
 \begin{center}
   \includegraphics[width=0.4\columnwidth]{images/salt_pepper_origin.jpg}
     \includegraphics[width=0.4\columnwidth]{images/speckle_noise.jpg}
@@ -642,8 +644,8 @@ Peak signal-to-noise ratio(PSNR) is the ratio between the maximum possible power
 \begin{frame}{Evaluated metrics for construction site photos
 }
 \begin{center}
-\includegraphics{con1.jpg}
-
+%\includegraphics{con1.jpg}
+\includegraphics[width=10cm,height=7cm]{con1.jpg}
 
 \end{center}
 \end{frame}
@@ -672,7 +674,8 @@ Peak signal-to-noise ratio(PSNR) is the ratio between the maximum possible power
 \subsection{Evaluated metrics for rubbish photos}
 \begin{frame}{Evaluated metrics for rubbish photos}
 \begin{center}
-\includegraphics{rub1.jpg}
+%\includegraphics{rub1.jpg}
+\includegraphics[width=10cm,height=7cm]{rub1.jpg}
 \end{center}
 
 
@@ -701,7 +704,8 @@ Peak signal-to-noise ratio(PSNR) is the ratio between the maximum possible power
 \begin{frame}{Evaluated metrics for pagoda photos
 }
 \begin{center}
-\includegraphics{pag1.jpg}
+%\includegraphics{pag1.jpg}
+\includegraphics[width=10cm,height=7cm]{pag1.jpg}
 \end{center}
 \end{frame}
 
@@ -733,7 +737,8 @@ Peak signal-to-noise ratio(PSNR) is the ratio between the maximum possible power
 \subsection{Evaluated metrics for pond photos}
 \begin{frame}{Evaluated metrics for pond photos}
 \begin{center}
-\includegraphics{pon1.jpg}
+%\includegraphics{pon1.jpg}
+\includegraphics[width=10cm,height=7cm]{pon1.jpg}
 \end{center}
 \end{frame}
 
