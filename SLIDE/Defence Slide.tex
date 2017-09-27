@@ -89,7 +89,7 @@
 
 \item Noise:
 
-Noise is an unwanted component of the image which can
+An unwanted component of the image which can
 be additive or multiplicative.
 %Noise is the cause of errors from image when in pixel values that do not reflect the true intensities of the real scene.
 
@@ -97,7 +97,7 @@ be additive or multiplicative.
 
 \item Denoise:
 
-Denoise is popular solution for photography or remove noise in images processing.
+Popular solution for photography or remove noise in images processing.
 
 
 
@@ -157,8 +157,8 @@ Denoise is popular solution for photography or remove noise in images processing
 \end{frame}
 
 
-\subsection{Salt and Pepper Noise}
-\begin{frame}{Salt and Pepper Noise(Impulse Noise)}
+\subsection{Original Image}
+\begin{frame}{Original Image}
 
 \vspace{1cm}
 \begin{center}
@@ -166,9 +166,9 @@ Denoise is popular solution for photography or remove noise in images processing
 
    % \centering 
     \includegraphics[width=0.4\columnwidth]{images/salt_pepper_origin.jpg}
-    \includegraphics[width=0.4\columnwidth]{images/salt_pepper_noise.jpg}
+   % \includegraphics[width=0.4\columnwidth]{images/salt_pepper_noise.jpg}
 	
-	Original image (left column) and salt and pepper noise (right column).
+	Original Image
 
 
 
@@ -176,47 +176,64 @@ Denoise is popular solution for photography or remove noise in images processing
 
 \end{frame}
 
-\subsection{Gaussian Noise}
-\begin{frame}{Gaussian Noise(Amplifier Noise)}
+\subsection{Noise}
+\begin{frame}{Noise}
 
-\vspace{1cm}
-\begin{center}
+%\vspace{1cm}
+%\begin{center}
 
+   % \includegraphics[width=0.27\columnwidth, height=8\baselineskip]{images/salt_pepper_noise.jpg}
+    %\includegraphics[width=0.27\columnwidth,  height=8\baselineskip]{images/gaussian_noise.jpg}
+    %\includegraphics[width=0.27\columnwidth,  height=8\baselineskip]{images/quantization_noise.jpg}
+    %\includegraphics[width=0.27\columnwidth,  height=8\baselineskip]{images/speckle_noise.jpg}
     
-    \includegraphics[width=0.4\columnwidth]{images/salt_pepper_origin.jpg}
-    \includegraphics[width=0.4\columnwidth]{images/gaussian_noise.jpg}
+    \begin{figure}
+    \centering  
+    \subfigure[Salt and Pepper]{\includegraphics[width=0.4\linewidth, height=3.2cm]{images/salt_pepper_noise.jpg}}
+    \subfigure[Gaussian]{\includegraphics[width=0.4\linewidth, height=3.2cm]{images/gaussian_noise.jpg}}
+    \subfigure[Quantization]{\includegraphics[width=0.4\linewidth, height=3.2cm]{images/quantization_noise.jpg}}
+    \subfigure[Speckle]{\includegraphics[width=0.4\linewidth, height=3.2cm]{images/speckle_noise.jpg}}
+    
+    \end{figure}
+    
+    
+    
+    
+    
+   % \includegraphics[width=0.4\columnwidth]{images/salt_pepper_origin.jpg}
+    %\includegraphics[width=0.4\columnwidth]{images/gaussian_noise.jpg}
 	
-	Original image (left column) and gaussian noise (right column).
+	%Original image (left column) and gaussian noise (right column).
 	
 
 
-\end{center}
+%\end{center}
 \end{frame}
 
-\subsection{Quantization Noise}
-\begin{frame}{Quantization Noise(Uniform Noise)}
+%\subsection{Quantization Noise}
+%\begin{frame}{Quantization Noise(Uniform Noise)}
 
-\vspace{1cm}
-\begin{center}
-	  \includegraphics[width=0.4\columnwidth]{images/salt_pepper_origin.jpg}
-	    \includegraphics[width=0.4\columnwidth]{images/quantization_noise.jpg}
+%\vspace{1cm}
+%\begin{center}
+%	  \includegraphics[width=0.4\columnwidth]{images/salt_pepper_origin.jpg}
+	  %  \includegraphics[width=0.4\columnwidth]{images/quantization_noise.jpg}
 		
-		Original image (left column) and quantized image to 6 bits (right column).
+	%	Original image (left column) and quantized image to 6 bits (right column).
 	
 
 
-\end{center}
-\end{frame}
-\subsection{Speckle Noise}
-\begin{frame}{Speckle Noise(Multiplicative Noise)}
-\begin{center}
-  \includegraphics[width=0.4\columnwidth]{images/salt_pepper_origin.jpg}
-    \includegraphics[width=0.4\columnwidth]{images/speckle_noise.jpg}
+%\end{center}
+%\end{frame}
+%\subsection{Speckle Noise}
+%\begin{frame}{Speckle Noise(Multiplicative Noise)}
+%\begin{center}
+ % \includegraphics[width=0.4\columnwidth]{images/salt_pepper_origin.jpg}
+  %  \includegraphics[width=0.4\columnwidth]{images/speckle_noise.jpg}
    
-    Original image (left column) and image corrupted with speckle noise (right column).
-\end{center}
+   % Original image (left column) and image corrupted with speckle noise (right column).
+%\end{center}
 
-\end{frame}
+%\end{frame}
 
 %\subsection{Quality of Camera(1)}
 %\begin{frame}{Quality of Camera(1)}
@@ -251,64 +268,38 @@ Denoise is popular solution for photography or remove noise in images processing
 %\textbf{Definition}
 
 %\vspace{0.5cm}
+\textbf{Spatial Filtering :}
 \begin{itemize}
-	\item Spatial Filtering
-	
-	 %In spatial domain methods, the denoising procedure is directly applied on pixels.
+\vspace{0.3cm}
 
-	
-	\
-	
-	\item  Frequency domain filtering
+\item Median Filter
 
-%Transform pixel intensity values to reveal certain image characteristics.
+\
 
+\item Average Filter
 
-%They will help image restoration is to remove the noise from the image in such a way that the original image is the best quality
+\
+
+\item Gaussian Filter
+\end{itemize}	
+\vspace{1cm}
 	
 	
+	
+\textbf{Frequency Domain Filtering :}
+\begin{itemize}
+\vspace{0.3cm}
+
+\item Wiener Filter
 \end{itemize}
-
 \end{frame}
 
-\subsection{Type Of Filtering}
 
-\begin{frame}{Type Of Filtering}
-%\textbf{Definition}
-
-%\vspace{0.5cm}
-\begin{itemize}
-	\item Median Filter
-	
-%	A nonlinear digital filtering technique
-	
-	
-	\
-	
-	\item  Average Filter
-	
-%To replace each pixel value in an image with the mean(’average’)
-	
-	\
-	
-		\item Gaussian Filter
-		
-%		 have feature of having no overshoot to a step function input while minimizing the rise and fall time
-	
-	
-	\
-	
-	\item  Wiener Filter
-	
-%	minimizes the mean square error between the estimated random process and the desired process
-\end{itemize}
-
-\end{frame}
 
 \subsection{Median Filter}
 \begin{frame}{Median Filter}
 
-The median filter is a nonlinear digital filtering technique, often used to remove noise from an image or signal (speckle noise \& salt-pepper noise)
+A nonlinear digital filtering technique, often used to remove noise from an image or signal.
 
 
 
@@ -353,7 +344,7 @@ The median filter is a nonlinear digital filtering technique, often used to remo
 
 \subsection{Average Filter}
 \begin{frame}{Average Filter}
-The idea of average filtering is simply to replace each pixel value in an image with the average value of its neighbors, including itself.
+Simply to replace each pixel value in an image with the average value of its neighbors, including itself.
 
 \begin{center}
 $k(u,v) = \frac{1}{M}\displaystyle\sum_{(p,q) \in N} i(p,q)$
@@ -439,7 +430,7 @@ $k(u,v) = \frac{1}{M}\displaystyle\sum_{(p,q) \in N} i(p,q)$
 \subsection{Gaussian Filter}
 \begin{frame}{Gaussian Filter}
 %Gaussian filters are ideal to start experimenting with filtering because their design can be controlled by manipulating just one variable- the variance.
-The Gaussian smoothing operator is a 2-D convolution operator that is used to 'blur' images and remove detail and noise.
+2-D convolution operator that is used to 'blur' images and remove detail and noise.
 %In electronics and signal processing, a Gaussian filter is a filter whose impulse response is a Gaussian function (or an approximation to it).
 \vspace{0.8cm}
 
@@ -573,38 +564,33 @@ Weiner filter is a frequency-domain method for image denosing. %Wiener filter re
 
 \subsection{Evaluation}
 \begin{frame}{Evaluation}
-The MSE is a measure of the quality of an estimator—it is always non-negative, and values closer to zero are better.
-
 
 \
 
+%A measure of the quality of an estimator—it is always non-negative, and values closer to zero are better.
+Mean Squared Error :
 \begin{center}
 
-	%$MSE =  \dfrac{1}{n} \displaystyle \sum_{i=1}^{n}(\hat{Y_i} - Y_i)^2$
-	%\begin{equation}
+\vspace{0.8cm}
+
 	    MSE = $\frac{1}{mn}{\sum_{i=1}^{m}\sum_{j=1}^{n}(f'_{ij}-f_{ij})^2}$ 
 	%\end{equation}
+\end{center}
+\vspace{1cm}
 
+Peak Signal To Noise Ratio : 
+\begin{center}
+
+\vspace{0.8cm}
+
+$PSNR = 10 \log_{10}\frac{R^2}{MSE}$
 \end{center}
  
 
 \end{frame}
 
-\subsection{Evaluation(1)}
-\begin{frame}{Evaluation(1)}
-Peak signal-to-noise ratio(PSNR) is the ratio between the maximum possible power of a signal and the power of corrupting noise that affects the fidelity of its representation. 
-
-\vspace{1cm}
-
-\begin{center}
-	
-	%$PSNR = 10\log_{10}\left(\dfrac{255^2}{MSE}\right)  $
-	 $PSNR = 10 \log_{10}\frac{R^2}{MSE}$
-	
-\end{center}
 
 
-\end{frame}
 
 \subsection{Results and Discussion
 }
