@@ -1,0 +1,24 @@
+\chapter{State of the art}
+\label{chapter_2}
+
+This chapter presents a brief review of the state of the art works about image denoising. The studied methods belong to two categories: Spatial Filtering and Frequency Domain Filtering. The following sections detail various methods in each category.
+
+%
+\section{Spatial filtering}
+
+Spatial filtering is a filtering operation where each pixel value of the output $o(u,v)$ is calculated from the input pixel at the same position $i(u,v)$ and its neighborhoods. There exists many methods to perform image denoising using spatial filtering. Two of the most popular spatial filters for denoising tasks are median filter and mean filter. 
+
+Chen et al., 1999~\cite{chen1999tri} proposed a tri-state median filter for noise reduction. The authors performed experiments on some properties of center weighted median filter. The experiments led to 3 statements: (1) if the center weight  equals to one, the output of the center weighted median filter equals to that of standard median filter; (2) if the center weight equal to or is larger than the scanning window size, the output of the center weighted median filter has not effects on noise removal; (3) finally if the center weight is set to be three, the denoising performance of the center weighted median filter is maximal. From this study, the authors concluded that three important pixel values in median filter needed to be kept are (1) the last value before standard median, (2) the standard median, and (3) the first value after the standard median. From this, the authors also named their method as ``Tri-state median filter''.
+
+Based on the study of Chen et al., 1999~\cite{chen1999tri}, Chang et al., 2008~\cite{chang2008adaptive} introduced an adaptive median filter for image denoising. The main idea of this method is the manipulation of the values between the last value before the standard median and the first value after the standard media. The authors claimed that by changing these values appropriately, the output of noise reduction using median filter can be improved. The authors then used standard median as a base median and performed experiments on impulse noise with different images. The experimental results show that this adaptive median filter gives better noise removal results than standard median filter and tri-state median filter.
+
+%
+\section{Frequency domain filtering}
+
+Another direction to denoise image is using frequency domain filtering. Frequency domain represents the original image in \textit{frequency} space. In this domain, changes in image position correspond to changes in the spatial frequency. Common procedure of frequency domain filtering includes: (1) transforming the image into frequency domain; (2) performing filtering in this domain; and (3) transforming the image back to spatial domain for visualization or other post-processing steps.
+
+One of the most popular methods is based on Wavelet transform. Wavelet transform is a type of image transformation which decomposes the image into multiple scale sub-bands with different time-frequency components. The process of using Wavelets for noise removal in image often contains three steps: (1) choose a wavelet type and a level $N$ of decomposition. Using this wavelet, a wavelet transformation is performed on the image; (2) after having the decomposition image, the next step is to determine threshold values for each level from 1 to $N$. By performing these determined threshold values to the decomposed image, the frequency filtering is actually applied to the image; (3) reconstruction of the image after applying frequency filtering. This step is actually the use of inverse wavelet transform on denoised image.
+
+Portilla et al., 2003~\cite{portilla2003image} proposed an image reduction method using Gaussian scale mixture model (GSM) in the wavelet domain. In detail, the authors modeled neighborhoods of oriented pyramid coefficients as a Gaussian vector and a hidden positive scalar multiplier. Using this model, Bayesian least square method is used to adjust the coefficients appropriately. Fan et al., 2001~\cite{fan2001image} introduced a novel hidden Markov model (HMM) in wavelet domain in order to remove noise from images. The method exploits local statistic and intrascale dependencies of wavelet coefficients to denoise images. The experiments show that the method provides low computational complexity when denoising image noise.
+
+% TODO : why don't we try freq domain filtering in this work?

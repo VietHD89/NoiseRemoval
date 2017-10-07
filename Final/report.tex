@@ -1,0 +1,116 @@
+\documentclass[a4paper,12pt]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}     
+\usepackage{indentfirst}
+\usepackage[top=2.5cm, bottom=3cm, left=3cm, right=3cm, headsep=14pt]{geometry}
+\usepackage{comment}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{color}
+\usepackage{amsthm}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{tabularx}
+\renewcommand{\thefootnote}{}
+
+\usepackage{makeidx}
+\makeindex
+
+\def\MasterLevel{Master Thesis }
+
+\def\InternshipTitle{Noise Evaluation and Reduction}
+\def\FirstName{DUC VIET}
+\def\LastName{HOANG}
+\def\HostOrganization{ICTLab, USTH}
+\def\CityName{Hanoi}
+\def\CountryName{Vietnam}
+\def\UniversityName{University of Rennes 1}
+\def\Supervisor{Dr. Tran Giang Son}
+
+\setlength{\parskip}{0.5em}
+
+% ----------------------- DEBUT DOCUMENT ---------------------------
+\begin{document}
+
+\pagestyle{plain}
+
+\pagenumbering{Roman}
+
+\let\cleardoublepage\clearpage
+% ----------------- DEFINITION DU TITRE ET DES AUTEURS -----------------
+\include{Title}
+
+% ----------------------- PAGE VIDE ---------------------------
+\include{Signature}
+
+
+\setcounter{page}{1}
+% ----------------------- ACKNOWLEDGEMENTS ---------------------------
+
+\include{Acknowledgements}
+
+\let\cleardoublepage\clearpage
+% ----------------------- RESUME ---------------------------
+\include{Abstract}
+
+% ----------------------- PAGE VIDE ---------------------------
+
+
+% ----------------------- REMERCIEMENTS ---------------------------
+
+%\include{Thanks}
+
+% ----------------------- TABLE DES MATIERES ---------------------------
+
+\tableofcontents{}
+
+\newpage
+
+\listoffigures{}
+
+\newpage
+
+\listoftables
+
+\newpage
+
+% \chapter*{List of Abreviations}
+
+% \newpage
+
+% ----------------------- CHAPITRE ---------------------------
+\pagenumbering{arabic}
+
+\include{Introduction}
+
+% ----------------------- CHAPITRE ---------------------------
+
+\include{StateOfTheArt}
+
+% ----------------------- CHAPITRE ---------------------------
+
+\include{Contribution}
+
+% ----------------------- CHAPITRE ---------------------------
+
+\include{Results}
+
+
+% ----------------------- CHAPITRE ---------------------------
+
+\include{Conclusion}
+
+% ----------------------- BIBLIOGRAPHIE ---------------------------
+
+\bibliographystyle{unsrt}
+\bibliography{report}
+
+% ----------------------- ANNEXES ---------------------------
+
+%\appendix
+
+%\include{Appendix}
+
+\end{document}

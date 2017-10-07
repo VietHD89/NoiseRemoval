@@ -1,0 +1,62 @@
+\begin{thebibliography}{10}
+
+\bibitem{ictlab}
+ICTLab Website.
+\newblock http://ictlab.usth.edu.vn/.
+\newblock Accessed September, 2017.
+
+\bibitem{liu2008automatic}
+Ce~Liu, Richard Szeliski, Sing~Bing Kang, C~Lawrence Zitnick, and William~T
+  Freeman.
+\newblock Automatic estimation and removal of noise from a single image.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  30(2):299--314, 2008.
+
+\bibitem{chen1999tri}
+Tao Chen, Kai-Kuang Ma, and Li-Hui Chen.
+\newblock Tri-state median filter for image denoising.
+\newblock {\em IEEE Transactions on Image processing}, 8(12):1834--1838, 1999.
+
+\bibitem{chang2008adaptive}
+Chin-Chen Chang, Ju-Yuan Hsiao, and Chih-Ping Hsieh.
+\newblock An adaptive median filter for image denoising.
+\newblock In {\em Intelligent Information Technology Application, 2008.
+  IITA'08. Second International Symposium on}, volume~2, pages 346--350. IEEE,
+  2008.
+
+\bibitem{portilla2003image}
+Javier Portilla, Vasily Strela, Martin~J Wainwright, and Eero~P Simoncelli.
+\newblock Image denoising using scale mixtures of gaussians in the wavelet
+  domain.
+\newblock {\em IEEE Transactions on Image processing}, 12(11):1338--1351, 2003.
+
+\bibitem{fan2001image}
+Guoliang Fan and Xiang-Gen Xia.
+\newblock Image denoising using a local contextual hidden markov model in the
+  wavelet domain.
+\newblock {\em IEEE signal processing letters}, 8(5):125--128, 2001.
+
+\bibitem{donoho1995noising}
+David~L Donoho.
+\newblock De-noising by soft-thresholding.
+\newblock {\em IEEE transactions on information theory}, 41(3):613--627, 1995.
+
+\bibitem{4566501}
+D.~Zhou and X.~Shen.
+\newblock Image denoising using block thresholding.
+\newblock In {\em 2008 Congress on Image and Signal Processing}, volume~3,
+  pages 335--338, May 2008.
+
+\bibitem{DENGWEN20081694}
+Zhou Dengwen and Cheng Wengang.
+\newblock Image denoising with an optimal threshold and neighbouring window.
+\newblock {\em Pattern Recognition Letters}, 29(11):1694 -- 1697, 2008.
+
+\bibitem{yue2014cid}
+Huanjing Yue, Xiaoyan Sun, Jingyu Yang, and Feng Wu.
+\newblock Cid: Combined image denoising in spatial and frequency domains using
+  web images.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 2933--2940, 2014.
+
+\end{thebibliography}

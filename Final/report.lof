@@ -1,0 +1,18 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Original image (left column) and salt and pepper noise (right column).\relax }}{3}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Original image (left column) and gaussian noise (right column).\relax }}{4}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Original image (left column) and quantized image to 6 bits (right column).\relax }}{5}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Original image (left column) and image corrupted with speckle noise (right column).\relax }}{5}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Median filter on noise removal: original noisy image (left column), denoised image with median filter (right column).\relax }}{10}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Impact of average filter size on noise removal: original noisy image (first column), denoised image with 3$\times $3 average filter (second column), denoised image with 5$\times $5 average filter (last column).\relax }}{12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Gaussian filter on noise removal: original noisy image (first column), denoised image with 5$\times $5 gaussian filter (second column).\relax }}{14}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Wiener filter on noise removal: image with gaussian noise (first column), denoised image with 5$\times $5 wiener filter (second column).\relax }}{14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of 4 photo classes. From left to right: Construction site, Rubbish, Pagoda, Pond\relax }}{16}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Evaluated construction site photos. From left to right: construction1, construction2, construction3, construction4, construction5\relax }}{17}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Evaluated rubbish photos. From left to right: rubbish1, rubbish2, rubbish3, rubbish4, rubbish5\relax }}{18}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Evaluated pagoda photos. From left to right: pagoda1, pagoda2, pagoda3, pagoda4, pagoda5\relax }}{19}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Evaluated pond photos. From left to right: pond1, pond2, pond3, pond4, pond5\relax }}{20}
+\addvspace {10\p@ }
