@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.7.20)  7 OCT 2017 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.7.20)  8 OCT 2017 11:13
 entering extended mode
 **report.tex
 (report.tex
@@ -828,41 +828,41 @@ s/Construction.png>]
 File: images/rubbish1.jpg Graphic file (type jpg)
 
 <use images/rubbish1.jpg>
-Package pdftex.def Info: images/rubbish1.jpg used on input line 87.
+Package pdftex.def Info: images/rubbish1.jpg used on input line 88.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/rubbish2.jpg, id=121, 142.28156pt x 189.70876pt>
 File: images/rubbish2.jpg Graphic file (type jpg)
 
 <use images/rubbish2.jpg>
-Package pdftex.def Info: images/rubbish2.jpg used on input line 88.
+Package pdftex.def Info: images/rubbish2.jpg used on input line 89.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/rubbish3.jpg, id=122, 142.28156pt x 106.89937pt>
 File: images/rubbish3.jpg Graphic file (type jpg)
 
 <use images/rubbish3.jpg>
-Package pdftex.def Info: images/rubbish3.jpg used on input line 89.
+Package pdftex.def Info: images/rubbish3.jpg used on input line 90.
 (pdftex.def)             Requested size: 76.8193pt x 57.71826pt.
 
 <images/rubbish4.jpg, id=123, 142.28156pt x 79.79813pt>
 File: images/rubbish4.jpg Graphic file (type jpg)
 
 <use images/rubbish4.jpg>
-Package pdftex.def Info: images/rubbish4.jpg used on input line 90.
+Package pdftex.def Info: images/rubbish4.jpg used on input line 91.
 (pdftex.def)             Requested size: 76.8193pt x 43.08546pt.
 
 <images/rubbish5.jpg, id=124, 142.28156pt x 189.70876pt>
 File: images/rubbish5.jpg Graphic file (type jpg)
 
 <use images/rubbish5.jpg>
-Package pdftex.def Info: images/rubbish5.jpg used on input line 91.
+Package pdftex.def Info: images/rubbish5.jpg used on input line 92.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/Rubish.png, id=125, 510.40688pt x 223.58531pt>
 File: images/Rubish.png Graphic file (type png)
  <use images/Rubish.png>
-Package pdftex.def Info: images/Rubish.png used on input line 98.
+Package pdftex.def Info: images/Rubish.png used on input line 99.
 (pdftex.def)             Requested size: 426.79134pt x 186.96768pt.
 
 [18 <./images/rubbish1.jpg> <./images/rubbish2.jpg> <./images/rubbish3.jpg> <./
@@ -871,41 +871,41 @@ images/rubbish4.jpg> <./images/rubbish5.jpg> <./images/Rubish.png>]
 File: images/pagoda1.jpg Graphic file (type jpg)
 
 <use images/pagoda1.jpg>
-Package pdftex.def Info: images/pagoda1.jpg used on input line 109.
+Package pdftex.def Info: images/pagoda1.jpg used on input line 111.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/pagoda2.jpg, id=131, 142.28156pt x 189.70876pt>
 File: images/pagoda2.jpg Graphic file (type jpg)
 
 <use images/pagoda2.jpg>
-Package pdftex.def Info: images/pagoda2.jpg used on input line 110.
+Package pdftex.def Info: images/pagoda2.jpg used on input line 112.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/pagoda3.jpg, id=132, 142.28156pt x 189.70876pt>
 File: images/pagoda3.jpg Graphic file (type jpg)
 
 <use images/pagoda3.jpg>
-Package pdftex.def Info: images/pagoda3.jpg used on input line 111.
+Package pdftex.def Info: images/pagoda3.jpg used on input line 113.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/pagoda4.jpg, id=133, 142.28156pt x 189.70876pt>
 File: images/pagoda4.jpg Graphic file (type jpg)
 
 <use images/pagoda4.jpg>
-Package pdftex.def Info: images/pagoda4.jpg used on input line 112.
+Package pdftex.def Info: images/pagoda4.jpg used on input line 114.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/pagoda5.jpg, id=134, 142.28156pt x 189.70876pt>
 File: images/pagoda5.jpg Graphic file (type jpg)
 
 <use images/pagoda5.jpg>
-Package pdftex.def Info: images/pagoda5.jpg used on input line 113.
+Package pdftex.def Info: images/pagoda5.jpg used on input line 115.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/Pagoda.png, id=135, 504.38437pt x 193.47281pt>
 File: images/Pagoda.png Graphic file (type png)
  <use images/Pagoda.png>
-Package pdftex.def Info: images/Pagoda.png used on input line 121.
+Package pdftex.def Info: images/Pagoda.png used on input line 123.
 (pdftex.def)             Requested size: 426.79134pt x 163.71167pt.
 
 [19 <./images/pagoda1.jpg> <./images/pagoda2.jpg> <./images/pagoda3.jpg> <./ima
@@ -913,52 +913,41 @@ ges/pagoda4.jpg> <./images/pagoda5.jpg> <./images/Pagoda.png>]
 <images/pond1.jpg, id=139, 142.28156pt x 106.89937pt>
 File: images/pond1.jpg Graphic file (type jpg)
  <use images/pond1.jpg>
-Package pdftex.def Info: images/pond1.jpg used on input line 132.
+Package pdftex.def Info: images/pond1.jpg used on input line 135.
 (pdftex.def)             Requested size: 76.8193pt x 57.71826pt.
 
 <images/pond2.jpg, id=140, 142.28156pt x 189.70876pt>
 File: images/pond2.jpg Graphic file (type jpg)
  <use images/pond2.jpg>
-Package pdftex.def Info: images/pond2.jpg used on input line 133.
+Package pdftex.def Info: images/pond2.jpg used on input line 136.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/pond3.jpg, id=141, 142.28156pt x 189.70876pt>
 File: images/pond3.jpg Graphic file (type jpg)
  <use images/pond3.jpg>
-Package pdftex.def Info: images/pond3.jpg used on input line 134.
+Package pdftex.def Info: images/pond3.jpg used on input line 137.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/pond4.jpg, id=142, 142.28156pt x 189.70876pt>
 File: images/pond4.jpg Graphic file (type jpg)
  <use images/pond4.jpg>
-Package pdftex.def Info: images/pond4.jpg used on input line 135.
+Package pdftex.def Info: images/pond4.jpg used on input line 138.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/pond5.jpg, id=143, 142.28156pt x 189.70876pt>
 File: images/pond5.jpg Graphic file (type jpg)
  <use images/pond5.jpg>
-Package pdftex.def Info: images/pond5.jpg used on input line 136.
+Package pdftex.def Info: images/pond5.jpg used on input line 139.
 (pdftex.def)             Requested size: 76.8193pt x 102.42961pt.
 
 <images/Pond.png, id=144, 492.33937pt x 222.8325pt>
 File: images/Pond.png Graphic file (type png)
  <use images/Pond.png>
-Package pdftex.def Info: images/Pond.png used on input line 146.
+Package pdftex.def Info: images/Pond.png used on input line 147.
 (pdftex.def)             Requested size: 426.79134pt x 193.17247pt.
 
 [20 <./images/pond1.jpg> <./images/pond2.jpg> <./images/pond3.jpg> <./images/po
-nd4.jpg> <./images/pond5.jpg> <./images/Pond.png>]
-
-LaTeX Warning: Reference `tab:construction' on page 21 undefined on input line 
-156.
-
-
-LaTeX Warning: Reference `tab:rubbish' on page 21 undefined on input line 156.
-
-
-LaTeX Warning: Reference `tab:pond' on page 21 undefined on input line 156.
-
-) [21] (Conclusion.tex
+nd4.jpg> <./images/pond5.jpg> <./images/Pond.png>]) [21] (Conclusion.tex
 Chapter 5.
 ) [22
 
@@ -977,7 +966,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  4408 strings out of 493698
  63400 string characters out of 3144412
- 135032 words of memory out of 3000000
+ 135065 words of memory out of 3000000
  7545 multiletter control sequences out of 15000+200000
  16673 words of font info for 43 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -1000,7 +989,7 @@ per/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1
 440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1728.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm2488.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on report.pdf (30 pages, 3611474 bytes).
+Output written on report.pdf (30 pages, 3611432 bytes).
 PDF statistics:
  217 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
